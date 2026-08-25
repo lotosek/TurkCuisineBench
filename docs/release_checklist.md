@@ -2,10 +2,10 @@
 
 ## Evidence and validation
 
-- [ ] Both original reviewer forms archived outside Git.
-- [ ] Reviewer decisions transcribed and independently checked.
+- [x] Both original reviewer forms archived outside Git.
+- [x] Reviewer decisions transcribed and integrity-checked against the source workbooks.
 - [ ] All disagreements adjudicated against the official source.
-- [ ] Reviewer identities removed from repository files.
+- [x] Reviewer identities removed from repository files.
 - [ ] All source URLs checked immediately before release.
 - [ ] Excluded candidates retained in a private development log.
 
@@ -15,7 +15,7 @@
 - [ ] Main Test version frozen and checksum recorded.
 - [ ] Gold and accepted-answer files locked before official evaluation.
 - [ ] Public and hidden release components explicitly identified.
-- [ ] No API key, credential, personal form, or signature tracked by Git.
+- [x] No API key, credential, personal form, or signature tracked by Git.
 
 ## Pilot and evaluation
 
@@ -38,4 +38,3 @@
 - [ ] `CITATION.cff` finalized.
 - [ ] Public repository URL and release identifier added to the manuscript.
 - [ ] arXiv version linked to the dataset record after posting.
-

@@ -9,12 +9,14 @@ The benchmark is designed around item-level provenance, conservative answer norm
 ## Current development status
 
 - A 36-item Dev set has been prepared.
-- Two independent paper reviewers reportedly approved the Dev items; the original forms still need to be archived and transcribed into the electronic validation record.
+- Two independent reviewer forms have been archived outside Git and transcribed into the de-identified validation workbook.
+- Thirty-two items received complete, concordant acceptance. Four items (`D002`, `D021`, `D022`, and `D034`) require a documented lead-researcher adjudication because of revision flags, a field-level clarity concern, or one missing required judgment.
+- A de-identified four-case adjudicator pack has been prepared so a third independent reviewer can resolve only the flagged cases against the official sources.
 - A 72-response methods pilot package has been prepared for two fixed model slots.
 - The main Test benchmark is under development and is not included in this repository.
 - No pilot scores or headline model comparisons have been released.
 
-The current Dev files are **pilot-ready but not formally frozen**. They must not be described as a final benchmark release until the reviewer records are archived, adjudication is completed, and a frozen file checksum is recorded.
+The current Dev files are **not formally frozen**. Reviewer evidence is archived and transcribed, but the four pending cases must be adjudicated and the resulting Dev file must receive a recorded checksum before the pilot is run or a final benchmark release is claimed.
 
 ## Repository structure
 
@@ -49,4 +51,3 @@ Citation metadata will be finalized after the author list, manuscript title, rel
 ## License
 
 No public reuse license has yet been granted. See `LICENSES.md`.
-
