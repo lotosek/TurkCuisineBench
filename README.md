@@ -8,15 +8,15 @@ The benchmark is designed around item-level provenance, conservative answer norm
 
 ## Current development status
 
-- A 36-item Dev set has been prepared.
+- The 36-item Dev set is frozen as `TurkCuisineBench-Dev v0.2` with recorded SHA-256 checksums.
 - Two independent reviewer forms have been archived outside Git and transcribed into the de-identified validation workbook.
-- Thirty-two items received complete, concordant acceptance. Four items (`D002`, `D021`, `D022`, and `D034`) require documented independent adjudication because of revision flags, a field-level clarity concern, or one missing required judgment.
-- A de-identified four-case adjudicator pack has been prepared so a third independent reviewer can resolve only the flagged cases against the official sources.
-- A 72-response methods pilot package has been prepared for two fixed model slots.
+- Thirty-two items received complete, concordant acceptance. Four flagged cases (`D002`, `D021`, `D022`, and `D034`) were resolved using wording recommendations from a third independent adjudicator, transcribed by the lead researcher and checked against the official sources.
+- Adjudication changed question wording only; no gold answer or accepted-answer set was changed.
+- A versioned 72-response methods pilot package has been prepared for two fixed model slots, but the pilot has not yet been run.
 - The main Test benchmark is under development and is not included in this repository.
 - No pilot scores or headline model comparisons have been released.
 
-The current Dev files are **not formally frozen**. Reviewer evidence is archived and transcribed, but the four pending cases must be adjudicated and the resulting Dev file must receive a recorded checksum before the pilot is run or a final benchmark release is claimed.
+The frozen Dev set may be used to debug the prompt, response capture, normalization, abstention, and scoring pipeline. It must not be used for headline leaderboard claims. The main Test set will remain separate and private until its evaluation protocol is frozen.
 
 ## Repository structure
 

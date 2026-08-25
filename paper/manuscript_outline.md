@@ -49,6 +49,8 @@ Primary target: *Language Resources and Evaluation*.
 - Adjudication and audit trail.
 - Ethical and authorship considerations.
 
+Provisional reporting sentence: “Two independent reviewers assessed all 36 Dev items. Four flagged cases were resolved using independent adjudicator wording recommendations, transcribed by the lead researcher and verified against official sources before the v0.2 freeze.”
+
 ## 5. Evaluation protocol
 
 - Dev/Test separation.
@@ -93,4 +95,3 @@ Primary target: *Language Resources and Evaluation*.
 4. Model-level results with confidence intervals.
 5. Performance by domain and risk class.
 6. Error taxonomy and representative de-identified examples.
-

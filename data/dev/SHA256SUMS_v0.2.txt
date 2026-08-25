@@ -1,0 +1,3 @@
+56cc3e3493454458d8b6b1eaf6999e2d0675ed0d2d18061b6e1cf24a213d03d1  TurkCuisineBench-Dev_v0.2_frozen.xlsx
+8be4ce71cfdac90b2d362e33ec39f6b2ff5c6b451dbbb160d648c73a90b86d75  TurkCuisineBench-Dev_v0.2_frozen.csv
+10d05701eb222ab3f6574503404135715f5eba9d035123e8219533a8f994504c  pilot_requests_v0.2.jsonl

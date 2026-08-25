@@ -4,6 +4,10 @@
 
 TurkCuisineBench is a manually curated, source-grounded benchmark for Turkish short-answer question answering in the domain of Turkish cuisine and culinary heritage.
 
+## Current version
+
+`TurkCuisineBench-Dev v0.2` contains 36 frozen development items. Two independent reviewers assessed every item. Four flagged cases were resolved using wording recommendations from a third independent adjudicator, transcribed by the lead researcher and verified against official sources. The resolution changed four question formulations and changed no gold or accepted answers. The two-model methods pilot has been prepared but not run.
+
 ## Languages
 
 - Canonical language: Turkish (`tr`)
@@ -57,4 +61,3 @@ The released benchmark is not intended to contain personal data. Reviewer names,
 ## Licensing
 
 Licensing remains under review. No public reuse license is granted by this development draft.
-

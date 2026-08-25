@@ -29,7 +29,7 @@ Each retained item preserves a source-fact identifier and source URL.
 
 ## Validation
 
-The Dev set receives full duplicate independent review. The planned main benchmark uses risk-based review: all higher-risk items receive duplicate review, while lower-risk items are distributed between reviewers with stratified overlap. The author adjudicates disagreements against the official source and records the rationale.
+The Dev set receives full duplicate independent review. Flagged Dev cases are resolved by a third independent adjudicator against the official source; the lead researcher transcribes the de-identified outcome and provenance. The planned main benchmark uses risk-based review: all higher-risk items receive duplicate review, while lower-risk items are distributed between reviewers with stratified overlap. Any main-study disagreement will be resolved under the recorded adjudication protocol rather than by changing answers in response to model outputs.
 
 Paper reviewer forms remain outside version control because they may contain personal data and signatures. Only de-identified decisions and adjudication outcomes may enter the research repository.
 
@@ -57,4 +57,3 @@ An exact match with a registered answer is labeled `CO`. An exact `Bilmiyorum` r
 - Short-answer scoring cannot capture all culturally plausible explanations.
 - Public release may contribute to future benchmark contamination.
 - Model-provider updates may limit exact longitudinal replication unless model snapshots are available.
-
