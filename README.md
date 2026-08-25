@@ -10,7 +10,7 @@ The benchmark is designed around item-level provenance, conservative answer norm
 
 - A 36-item Dev set has been prepared.
 - Two independent reviewer forms have been archived outside Git and transcribed into the de-identified validation workbook.
-- Thirty-two items received complete, concordant acceptance. Four items (`D002`, `D021`, `D022`, and `D034`) require a documented lead-researcher adjudication because of revision flags, a field-level clarity concern, or one missing required judgment.
+- Thirty-two items received complete, concordant acceptance. Four items (`D002`, `D021`, `D022`, and `D034`) require documented independent adjudication because of revision flags, a field-level clarity concern, or one missing required judgment.
 - A de-identified four-case adjudicator pack has been prepared so a third independent reviewer can resolve only the flagged cases against the official sources.
 - A 72-response methods pilot package has been prepared for two fixed model slots.
 - The main Test benchmark is under development and is not included in this repository.
