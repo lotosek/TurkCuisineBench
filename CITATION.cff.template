@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use TurkCuisineBench, please cite the accompanying paper and benchmark release."
+title: "TurkCuisineBench"
+type: dataset
+authors:
+  - family-names: "REPLACE_WITH_FAMILY_NAME"
+    given-names: "REPLACE_WITH_GIVEN_NAMES"
+version: "REPLACE_WITH_RELEASE_VERSION"
+date-released: "YYYY-MM-DD"
+repository-code: "REPLACE_WITH_PUBLIC_REPOSITORY_URL"
+url: "REPLACE_WITH_DATASET_URL"
+doi: "REPLACE_WITH_RELEASE_DOI"
+license: "REPLACE_AFTER_LICENSE_REVIEW"
+

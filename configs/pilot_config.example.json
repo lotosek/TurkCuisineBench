@@ -1,0 +1,24 @@
+{
+  "prompt_version": "prompt_tr_v0.1",
+  "scorer_version": "scorer_tr_v0.1",
+  "max_output_tokens": 64,
+  "store": false,
+  "models": {
+    "M1": {
+      "provider_type": "openai_responses",
+      "model": "gpt-5.5-2026-04-23",
+      "base_url": "https://api.openai.com/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "temperature": null,
+      "enabled": true
+    },
+    "M2": {
+      "provider_type": "openai_compatible_chat",
+      "model": "gpt-oss-120b",
+      "base_url": "REPLACE_WITH_PROVIDER_BASE_URL",
+      "api_key_env": "TURKCUISINEBENCH_M2_API_KEY",
+      "temperature": 0,
+      "enabled": false
+    }
+  }
+}

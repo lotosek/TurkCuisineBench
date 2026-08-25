@@ -1,0 +1,28 @@
+# Secrets and local configuration
+.env
+.env.*
+pilot_config.json
+*secret*
+*token*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+~$*
+
+# Private research records
+reviewer_forms/
+reviewer_identifiers/
+data/test_private/*
+!data/test_private/README.md
+results/raw_private/
+
+# Generated QA artifacts
+*.inspect.ndjson
+*_previews/
+
