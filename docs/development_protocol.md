@@ -37,7 +37,7 @@ Paper reviewer forms remain outside version control because they may contain per
 
 The Dev pilot uses two fixed model slots and one response per model-item pair. Its purpose is to test prompt behaviour, response capture, Turkish-aware normalization, abstention, and human-review routing. Pilot scores are not main benchmark results.
 
-The configured pilot endpoints are the `gpt-5.5-2026-04-23` snapshot through the OpenAI Responses API and the hosted open-weight `openai/gpt-oss-120b` model through Groq's OpenAI-compatible Chat Completions API. The provider, requested model identifier, returned model identifier, request identifier, timestamps, and latency are recorded for each response. Because the hosted open-weight endpoint does not provide a benchmark-controlled weight or serving snapshot, provider-side version drift must be reported as a reproducibility limitation.
+The configured pilot endpoints are the `gpt-5.5-2026-04-23` snapshot through the OpenAI Responses API and the hosted open-weight `openai/gpt-oss-120b` model through Groq's OpenAI-compatible Chat Completions API. Both use low reasoning effort and a 256-token generation ceiling; M2 reasoning traces are hidden so the recorded raw response contains the requested answer rather than chain-of-thought text. The provider, requested model identifier, returned model identifier, request identifier, timestamps, latency, and generation settings are recorded for each response. Because the hosted open-weight endpoint does not provide a benchmark-controlled weight or serving snapshot, provider-side version drift must be reported as a reproducibility limitation.
 
 ## Freeze rules
 

@@ -69,8 +69,10 @@ def run_one(model_cfg: dict, request_record: dict, common_cfg: dict) -> dict:
     provider_type = model_cfg["provider_type"]
     model = model_cfg["model"]
     prompt = request_record["prompt"]
-    max_tokens = int(common_cfg.get("max_output_tokens", 64))
+    max_tokens = int(common_cfg.get("max_output_tokens", 256))
     temperature = model_cfg.get("temperature")
+    reasoning_effort = model_cfg.get("reasoning_effort")
+    reasoning_format = model_cfg.get("reasoning_format")
 
     if provider_type == "openai_responses":
         url = f"{base_url}/responses"
@@ -82,15 +84,21 @@ def run_one(model_cfg: dict, request_record: dict, common_cfg: dict) -> dict:
         }
         if temperature is not None:
             body["temperature"] = temperature
+        if reasoning_effort is not None:
+            body["reasoning"] = {"effort": reasoning_effort}
     elif provider_type == "openai_compatible_chat":
         url = f"{base_url}/chat/completions"
         body = {
             "model": model,
             "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": max_tokens,
+            "max_completion_tokens": max_tokens,
         }
         if temperature is not None:
             body["temperature"] = temperature
+        if reasoning_effort is not None:
+            body["reasoning_effort"] = reasoning_effort
+        if reasoning_format is not None:
+            body["reasoning_format"] = reasoning_format
     else:
         raise ValueError(f"Unsupported provider_type: {provider_type}")
 
@@ -114,6 +122,8 @@ def run_one(model_cfg: dict, request_record: dict, common_cfg: dict) -> dict:
         "request_settings": {
             "max_output_tokens": max_tokens,
             "temperature": temperature,
+            "reasoning_effort": reasoning_effort,
+            "reasoning_format": reasoning_format,
             "store": bool(common_cfg.get("store", False)),
             "tools": "off",
             "stateless": True,
