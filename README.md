@@ -12,7 +12,7 @@ The benchmark is designed around item-level provenance, conservative answer norm
 - Two independent reviewer forms have been archived outside Git and transcribed into the de-identified validation workbook.
 - Thirty-two items received complete, concordant acceptance. Four flagged cases (`D002`, `D021`, `D022`, and `D034`) were resolved using wording recommendations from a third independent adjudicator, transcribed by the lead researcher and checked against the official sources.
 - Adjudication changed question wording only; no gold answer or accepted-answer set was changed.
-- A versioned 72-response methods pilot package has been prepared for two fixed model slots, but the pilot has not yet been run.
+- A versioned 72-response methods pilot package has been prepared for two fixed model slots: `gpt-5.5-2026-04-23` through the OpenAI Responses API and `openai/gpt-oss-120b` through Groq's OpenAI-compatible API. The pilot has not yet been run because the required API credentials are not stored in the research environment.
 - The main Test benchmark is under development and is not included in this repository.
 - No pilot scores or headline model comparisons have been released.
 

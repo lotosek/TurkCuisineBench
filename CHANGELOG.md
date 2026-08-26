@@ -9,6 +9,7 @@
 - Frozen the 36-item Dev set and recorded SHA-256 checksums for its XLSX and CSV representations.
 - Added validation workflow v0.4 and pilot execution package v0.2.
 - Regenerated all 72 fixed pilot requests from the frozen Dev questions.
+- Fixed the pilot endpoints as `gpt-5.5-2026-04-23` (OpenAI Responses API) and `openai/gpt-oss-120b` (Groq OpenAI-compatible API); execution remains pending until credentials are provided through environment variables.
 
 ### Added
 

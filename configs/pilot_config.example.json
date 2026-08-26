@@ -14,9 +14,9 @@
     },
     "M2": {
       "provider_type": "openai_compatible_chat",
-      "model": "gpt-oss-120b",
-      "base_url": "REPLACE_WITH_PROVIDER_BASE_URL",
-      "api_key_env": "TURKCUISINEBENCH_M2_API_KEY",
+      "model": "openai/gpt-oss-120b",
+      "base_url": "https://api.groq.com/openai/v1",
+      "api_key_env": "GROQ_API_KEY",
       "temperature": 0,
       "enabled": false
     }
