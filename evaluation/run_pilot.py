@@ -51,7 +51,11 @@ def request_json(url: str, api_key: str, body: dict, timeout: int = 120) -> tupl
     req = urllib.request.Request(
         url,
         data=data,
-        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            "User-Agent": "TurkCuisineBench/0.1",
+        },
         method="POST",
     )
     with urllib.request.urlopen(req, timeout=timeout) as response:
