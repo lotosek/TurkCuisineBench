@@ -1,7 +1,8 @@
 {
+  "run_protocol_version": "pilot_run_v0.3",
   "prompt_version": "prompt_tr_v0.1",
   "scorer_version": "scorer_tr_v0.1",
-  "max_output_tokens": 256,
+  "max_output_tokens": 1024,
   "store": false,
   "models": {
     "M1": {
@@ -21,7 +22,7 @@
       "reasoning_effort": "low",
       "reasoning_format": "hidden",
       "temperature": 0,
-      "enabled": false
+      "enabled": true
     }
   }
 }

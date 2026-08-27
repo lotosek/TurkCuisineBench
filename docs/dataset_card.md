@@ -6,7 +6,7 @@ TurkCuisineBench is a manually curated, source-grounded benchmark for Turkish sh
 
 ## Current version
 
-`TurkCuisineBench-Dev v0.2` contains 36 frozen development items. Two independent reviewers assessed every item. Four flagged cases were resolved using wording recommendations from a third independent adjudicator, transcribed by the lead researcher and verified against official sources. The resolution changed four question formulations and changed no gold or accepted answers. The two-model methods pilot has been prepared but not run.
+`TurkCuisineBench-Dev v0.2` contains 36 frozen development items. Two independent reviewers assessed every item. Four flagged cases were resolved using wording recommendations from a third independent adjudicator, transcribed by the lead researcher and verified against official sources. The resolution changed four question formulations and changed no gold or accepted answers. A provider-neutral two-model methods pilot was completed under `pilot_run_v0.3`. All 46 non-exact responses were independently double coded, five routed cases were adjudicated, and the pilot taxonomy was frozen as `Taxonomy v1.0`. Pilot aggregates validate the pipeline and are not used for headline model ranking.
 
 ## Languages
 

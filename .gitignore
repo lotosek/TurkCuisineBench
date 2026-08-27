@@ -21,8 +21,12 @@ reviewer_identifiers/
 data/test_private/*
 !data/test_private/README.md
 results/raw_private/
+results/pilot/pilot_v0.2_scored.csv
+results/pilot/pilot_run_v0.3_scored.csv
+workbooks/*Reviewer*
+workbooks/*Reconciled*
+workbooks/*Consensus*
 
 # Generated QA artifacts
 *.inspect.ndjson
 *_previews/
-

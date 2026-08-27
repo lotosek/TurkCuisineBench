@@ -112,8 +112,18 @@ def run_one(model_cfg: dict, request_record: dict, common_cfg: dict) -> dict:
 
     if provider_type == "openai_responses":
         raw_text = extract_responses_text(payload)
+        response_status = payload.get("status")
+        incomplete_details = payload.get("incomplete_details")
+        finish_reason = None
     else:
         raw_text = payload["choices"][0]["message"]["content"]
+        response_status = "completed"
+        incomplete_details = None
+        finish_reason = payload["choices"][0].get("finish_reason")
+
+    usage = payload.get("usage") or {}
+    output_details = usage.get("output_tokens_details") or {}
+    completion_details = usage.get("completion_tokens_details") or {}
 
     return {
         "status": "ok",
@@ -123,6 +133,17 @@ def run_one(model_cfg: dict, request_record: dict, common_cfg: dict) -> dict:
         "request_id": payload.get("id") or headers.get("x-request-id"),
         "latency_ms": latency_ms,
         "raw_response": raw_text,
+        "response_status": response_status,
+        "finish_reason": finish_reason,
+        "incomplete_details": incomplete_details,
+        "usage": {
+            "input_tokens": usage.get("input_tokens", usage.get("prompt_tokens")),
+            "output_tokens": usage.get("output_tokens", usage.get("completion_tokens")),
+            "total_tokens": usage.get("total_tokens"),
+            "reasoning_tokens": output_details.get(
+                "reasoning_tokens", completion_details.get("reasoning_tokens")
+            ),
+        },
         "request_settings": {
             "max_output_tokens": max_tokens,
             "temperature": temperature,
@@ -174,6 +195,7 @@ def main() -> None:
 
             record = {
                 **req,
+                "run_protocol_version": config.get("run_protocol_version"),
                 "prompt_version": config.get("prompt_version"),
                 "scorer_version": config.get("scorer_version"),
                 "started_at_utc": started_at,

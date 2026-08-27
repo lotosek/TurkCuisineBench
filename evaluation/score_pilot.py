@@ -54,6 +54,16 @@ def score(raw_response: str, accepted_answers: str) -> dict:
     return {"auto_label": "REVIEW", "manual_review": "yes", "scoring_reason": "no_exact_registered_match"}
 
 
+def is_technically_valid(result: dict) -> bool:
+    raw = result.get("raw_response", "")
+    return (
+        result.get("status") == "ok"
+        and bool(raw.strip())
+        and result.get("response_status") in {None, "completed"}
+        and result.get("finish_reason") not in {"length", "content_filter"}
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True, type=Path)
@@ -67,7 +77,9 @@ def main() -> None:
         "run_id", "model_slot", "requested_model_id", "returned_model_id", "item_id",
         "raw_response", "normalized_response", "gold_answer", "accepted_answers",
         "auto_label", "manual_review", "scoring_reason", "final_label", "reviewer_note",
-        "scorer_version", "request_id", "started_at_utc", "finished_at_utc", "latency_ms", "status",
+        "run_protocol_version", "scorer_version", "started_at_utc",
+        "finished_at_utc", "latency_ms", "status", "response_status", "finish_reason",
+        "incomplete_details", "input_tokens", "output_tokens", "reasoning_tokens", "total_tokens",
     ]
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", encoding="utf-8-sig", newline="") as handle:
@@ -76,9 +88,11 @@ def main() -> None:
         for result in results:
             item = items[result["item_id"]]
             raw = result.get("raw_response", "")
-            scored = score(raw, item["accepted_answers"]) if result.get("status") == "ok" else {
-                "auto_label": "REVIEW", "manual_review": "yes", "scoring_reason": "request_error"
+            technically_valid = is_technically_valid(result)
+            scored = score(raw, item["accepted_answers"]) if technically_valid else {
+                "auto_label": "REVIEW", "manual_review": "yes", "scoring_reason": "technical_invalid_response"
             }
+            usage = result.get("usage") or {}
             writer.writerow({
                 "run_id": result["run_id"],
                 "model_slot": result["model_slot"],
@@ -92,12 +106,20 @@ def main() -> None:
                 **scored,
                 "final_label": "",
                 "reviewer_note": "",
+                "run_protocol_version": result.get("run_protocol_version", ""),
                 "scorer_version": SCORER_VERSION,
-                "request_id": result.get("request_id", ""),
                 "started_at_utc": result.get("started_at_utc", ""),
                 "finished_at_utc": result.get("finished_at_utc", ""),
                 "latency_ms": result.get("latency_ms", ""),
                 "status": result.get("status", ""),
+                "response_status": result.get("response_status", ""),
+                "finish_reason": result.get("finish_reason", ""),
+                "incomplete_details": json.dumps(result.get("incomplete_details"), ensure_ascii=False)
+                if result.get("incomplete_details") is not None else "",
+                "input_tokens": usage.get("input_tokens", ""),
+                "output_tokens": usage.get("output_tokens", ""),
+                "reasoning_tokens": usage.get("reasoning_tokens", ""),
+                "total_tokens": usage.get("total_tokens", ""),
             })
 
 
