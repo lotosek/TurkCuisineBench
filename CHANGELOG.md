@@ -7,6 +7,8 @@
 - Resolved 11 disagreements through lead-researcher adjudication without treating the lead as a third independent reviewer: 10 Reviewer A revisions adopted, one custom source-grounded revision, and no exclusions.
 - Frozen 61 unchanged and 11 revised items in a private 72-item Test master with separate question-only and private-key JSONL files and verified SHA-256 checksums.
 - Kept all Test wording, answers, reviewer/adjudication records, mappings, and checksums outside Git; only aggregate M3 status is public-safe.
+- Prospectively froze Statistical Analysis Plan v1.0, the deterministic 25% response-review overlap selector, and seed `20260828`; blind-code generation additionally requires a private salt that is not stored in Git.
+- Passed selector unit tests and a 24-request offline schedule dry run using three synthetic non-Test fixtures; no provider endpoint was called.
 - Left M0 and full M4 open. No Test endpoint call is authorized until the ethics/exemption record, remaining access probes, exact equal-treatment panel, current prices/cost ceiling, configuration, analysis plan, and final non-Test fixture dry run are frozen.
 
 ## 2026-08-28 — Main-study M0 audit and domain freeze

@@ -12,7 +12,9 @@ The private 72-item Test content, question-only execution file, and private scor
 
 The provisional M4 panel contains eight slots across OpenAI, Anthropic, Google, and Groq. Non-benchmark access probes passed for the two OpenAI and two Groq slots. Anthropic and Google remain unprobed because credentials are absent; the panel is therefore not frozen.
 
-The main-study runner has passed an offline dummy dry-run and a negative authorization test: with `execution_authorized=false`, it refuses network execution before loading any provider request. This is preparation evidence only and does not close M4. Full M4 remains open until the exact panel, access probes, current cost ceiling, prompt/configuration, overlap procedure, statistical analysis plan, and final non-Test fixture dry run are frozen together.
+The main-study runner has passed an offline dummy dry-run and a negative authorization test: with `execution_authorized=false`, it refuses network execution before loading any provider request. This is preparation evidence only and does not close M4. Full M4 remains open until the exact panel, remaining access probes, current cost ceiling, final prompt/configuration, and final non-Test fixture dry run are frozen together.
+
+The non-provider-dependent M4 methods components are now prospectively frozen: Statistical Analysis Plan v1.0, the deterministic 25% blinded review-overlap selector, and seed `20260828`. The selector uses a separate private blinding salt, so its public seed does not reveal model identities. A three-item synthetic dry run passed without network access; it must be repeated after the exact provider panel and final configuration are frozen. Checksums and the remaining blockers are recorded in [`m4_methods_manifest_v0.1.md`](m4_methods_manifest_v0.1.md).
 
 ## Open controls
 
@@ -28,7 +30,7 @@ The main-study runner has passed an offline dummy dry-run and a negative authori
 1. Obtain and archive the institutional ethics/exemption determination.
 2. Obtain Anthropic and Gemini access and run only neutral, non-Test access probes.
 3. Recheck provider availability and prices, then freeze the exact equal-treatment panel and cost ceiling.
-4. Freeze the prompt/configuration, overlap audit seed/script, and statistical analysis plan.
+4. Freeze the final prompt/configuration; the overlap seed/script and Statistical Analysis Plan v1.0 are already prospectively frozen.
 5. Run the final dry run on synthetic/non-Test fixtures only and record the M4 authorization decision.
 6. Do not call model endpoints with Test questions until Gates M0–M4 all pass.
 

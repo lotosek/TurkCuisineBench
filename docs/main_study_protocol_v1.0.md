@@ -205,8 +205,8 @@ Implementation record (2026-08-28): both independent validators completed all 72
 - [x] Test and question-only files checksummed.
 - [ ] Exact model panel and expected cost recorded.
 - [ ] Prompt and execution configuration frozen.
-- [ ] Review-overlap seed and sampling script frozen.
-- [ ] Statistical analysis plan versioned.
+- [x] Review-overlap seed and sampling script frozen.
+- [x] Statistical analysis plan versioned.
 - [ ] Dry run uses non-Test fixture items only.
 
 ## 9. Phase M5 — Main model execution

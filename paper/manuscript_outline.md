@@ -51,6 +51,8 @@ Primary target: *Language Resources and Evaluation*.
 
 Provisional reporting sentence: “Two independent reviewers assessed all 36 Dev items. Four flagged cases were resolved using independent adjudicator wording recommendations, transcribed by the lead researcher and verified against official sources before the v0.2 freeze.”
 
+Main-study reporting sentence: “Two independent validators assessed all 72 Test items against official sources. Pre-adjudication final-action agreement was 94.4% in the prospectively locked 18-item primary set and 86.7% in the 30-item risk sensitivity set; the 84.7% all-item comparison is supplementary. Eleven disagreements were resolved through lead-researcher adjudication before the private Test-content freeze.” Cohen's κ must be reported with the one-category marginal limitation rather than interpreted alone.
+
 ## 5. Evaluation protocol
 
 - Dev/Test separation.
@@ -59,6 +61,7 @@ Provisional reporting sentence: “Two independent reviewers assessed all 36 Dev
 - Turkish prompt and closed-book conditions.
 - Normalization, abstention, and manual-review routing.
 - Metrics and uncertainty reporting.
+- Prospectively frozen Statistical Analysis Plan v1.0, paired item-cluster bootstrap, multiplicity control, and invalid-response sensitivity analysis.
 
 ## 6. Results
 
