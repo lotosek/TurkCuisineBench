@@ -21,6 +21,7 @@ The benchmark is designed around item-level provenance, conservative answer norm
 - A public-safe aggregate validation report is available at [`docs/main_study_item_validation_report_v1.0.md`](docs/main_study_item_validation_report_v1.0.md). Private questions, keys, reviewer labels, rationales, adjudication records, and hashes remain outside Git.
 - The provisional eight-model M4 panel and provider-neutral prompt rules are documented in [`docs/model_panel_manifest_v0.1.md`](docs/model_panel_manifest_v0.1.md); this is not authorization to execute the private Test.
 - Statistical Analysis Plan v1.0 and the deterministic, privately salted 25% response-review overlap selector are frozen before Test responses; their checksums and preparatory non-Test dry-run record are in [`docs/m4_methods_manifest_v0.1.md`](docs/m4_methods_manifest_v0.1.md).
+- Official model IDs and prices were rechecked symmetrically across all four providers, and a conservative USD 5 execution ceiling was registered in [`docs/model_cost_envelope_v0.1.md`](docs/model_cost_envelope_v0.1.md). Anthropic and Google access probes remain pending.
 - No model-level pilot ranking is released. Private reviewer returns, adjudication records, model-to-review mappings, and row-level consensus audit files remain outside Git.
 
 The frozen Dev set may be used to debug the prompt, response capture, normalization, abstention, and scoring pipeline. It must not be used for headline leaderboard claims. The main Test set will remain separate and private until its evaluation protocol is frozen.

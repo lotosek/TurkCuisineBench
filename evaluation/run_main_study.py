@@ -147,6 +147,8 @@ def make_request(config: dict[str, Any], model: dict[str, Any], question: dict[s
             body["temperature"] = model["temperature"]
         if model.get("reasoning_effort") is not None:
             body["reasoning_effort"] = model["reasoning_effort"]
+        if model.get("reasoning_format") is not None:
+            body["reasoning_format"] = model["reasoning_format"]
     elif provider == "anthropic":
         url = "https://api.anthropic.com/v1/messages"
         headers = {"x-api-key": api_key, "anthropic-version": "2023-06-01"}
@@ -156,6 +158,8 @@ def make_request(config: dict[str, Any], model: dict[str, Any], question: dict[s
             "messages": [{"role": "user", "content": user}],
             "max_tokens": maximum,
         }
+        if model.get("thinking") == "disabled":
+            body["thinking"] = {"type": "disabled"}
         if model.get("temperature") is not None:
             body["temperature"] = model["temperature"]
     elif provider == "google":

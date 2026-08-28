@@ -1,0 +1,19 @@
+{
+  "currency": "USD",
+  "verified_date": "2026-08-28",
+  "items_per_slot": 72,
+  "maximum_attempts_per_item": 3,
+  "ceiling_input_tokens_per_attempt": 512,
+  "ceiling_output_tokens_per_attempt": 128,
+  "contingency_multiplier": 1.5,
+  "models": [
+    {"slot":"S01","model":"gpt-5.5-2026-04-23","current_input_per_mtok":5.0,"current_output_per_mtok":30.0,"ceiling_input_per_mtok":5.0,"ceiling_output_per_mtok":30.0},
+    {"slot":"S02","model":"gpt-5.4-mini-2026-03-17","current_input_per_mtok":0.75,"current_output_per_mtok":4.5,"ceiling_input_per_mtok":0.75,"ceiling_output_per_mtok":4.5},
+    {"slot":"S03","model":"claude-sonnet-5","current_input_per_mtok":2.0,"current_output_per_mtok":10.0,"ceiling_input_per_mtok":3.0,"ceiling_output_per_mtok":15.0},
+    {"slot":"S04","model":"claude-haiku-4-5-20251001","current_input_per_mtok":1.0,"current_output_per_mtok":5.0,"ceiling_input_per_mtok":1.0,"ceiling_output_per_mtok":5.0},
+    {"slot":"S05","model":"gemini-3.6-flash","current_input_per_mtok":0.75,"current_output_per_mtok":3.75,"ceiling_input_per_mtok":1.5,"ceiling_output_per_mtok":7.5},
+    {"slot":"S06","model":"gemini-3.5-flash-lite","current_input_per_mtok":0.3,"current_output_per_mtok":2.5,"ceiling_input_per_mtok":0.3,"ceiling_output_per_mtok":2.5},
+    {"slot":"S07","model":"openai/gpt-oss-120b","current_input_per_mtok":0.15,"current_output_per_mtok":0.6,"ceiling_input_per_mtok":0.15,"ceiling_output_per_mtok":0.6},
+    {"slot":"S08","model":"qwen/qwen3.6-27b","current_input_per_mtok":0.6,"current_output_per_mtok":3.0,"ceiling_input_per_mtok":0.6,"ceiling_output_per_mtok":3.0}
+  ]
+}

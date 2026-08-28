@@ -16,6 +16,8 @@ The main-study runner has passed an offline dummy dry-run and a negative authori
 
 The non-provider-dependent M4 methods components are now prospectively frozen: Statistical Analysis Plan v1.0, the deterministic 25% blinded review-overlap selector, and seed `20260828`. The selector uses a separate private blinding salt, so its public seed does not reveal model identities. A three-item synthetic dry run passed without network access; it must be repeated after the exact provider panel and final configuration are frozen. Checksums and the remaining blockers are recorded in [`m4_methods_manifest_v0.1.md`](m4_methods_manifest_v0.1.md).
 
+All eight requested model IDs and public list prices were rechecked against official provider documentation on 2026-08-28. A deliberately conservative three-attempt, full-token-use envelope plus 50% contingency produces a registered USD 5 run ceiling. Anthropic and Google access remains unprobed, so this price record does not freeze the panel or authorize execution. Details are in [`model_cost_envelope_v0.1.md`](model_cost_envelope_v0.1.md).
+
 ## Open controls
 
 - Obtain and archive a written institutional ethics/exemption determination before treating the human-validation stage as complete or making an exemption claim in the manuscript.
@@ -29,7 +31,7 @@ The non-provider-dependent M4 methods components are now prospectively frozen: S
 
 1. Obtain and archive the institutional ethics/exemption determination.
 2. Obtain Anthropic and Gemini access and run only neutral, non-Test access probes.
-3. Recheck provider availability and prices, then freeze the exact equal-treatment panel and cost ceiling.
+3. Complete the remaining provider access probes, recheck prices immediately before execution, and then freeze the exact equal-treatment panel; the provisional USD 5 cost ceiling is already registered.
 4. Freeze the final prompt/configuration; the overlap seed/script and Statistical Analysis Plan v1.0 are already prospectively frozen.
 5. Run the final dry run on synthetic/non-Test fixtures only and record the M4 authorization decision.
 6. Do not call model endpoints with Test questions until Gates M0–M4 all pass.

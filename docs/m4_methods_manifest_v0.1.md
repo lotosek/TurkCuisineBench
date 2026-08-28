@@ -11,8 +11,12 @@ Date: 2026-08-28
 | Overlap-selector test | `evaluation/test_select_review_overlap.py` | `4F14BFB2636A3A1EBED6B38FA0D0A8CF23C696C29F3D60E62607232C860A4E7C` | passed |
 | Review-overlap seed | `20260828` | not applicable | frozen |
 | Non-Test fixture | `evaluation/fixtures/non_test_questions.jsonl` | `53AFD142C35B7BDAE497165737453C8391A675A301B256682B9BD6D7FF48DEF7` | synthetic fixture only |
-| Provisional configuration | `configs/main_study_config.example.json` | `0AA7AC4F7CDCCF7988498B04AA4B8B997108A19A5B2F57AEEB199098D781092A` | not final; panel access pending |
-| Main runner | `evaluation/run_main_study.py` | `0A109F78AFC458143AE11F44C3B62B1C2CD6D46EE658B8B22CAF52BCD5FA248D` | authorization lock retained |
+| Provisional configuration | `configs/main_study_config.example.json` | `936C4F25A5D473FDE53083EA217EB3D7A13480EB2DA68D0FA607149A9B0C27C4` | not final; panel access pending |
+| Main runner | `evaluation/run_main_study.py` | `CD3EFF8DDDCA989AFAE9C059855083F17FFE355021CDE3960F36A40885D9C21C` | authorization lock retained |
+| Provider-payload test | `evaluation/test_main_study_payloads.py` | `BFCF0EE5C92D3B27566199A6598CBE0FA97A0168925F53C59DBDFDAC2CBA4035` | passed |
+| Price snapshot | `configs/main_study_costs_2026-08-28.json` | `BC8642B7EF332631535F92FC715CCC09D04A76679A74D3A1FCF1E0B014241238` | recheck before execution |
+| Cost calculator | `evaluation/estimate_main_study_cost.py` | `09159DBD9DD242E248A89FCFD86ABEE2036612A73ED0AD6C3D4C264FCE339483` | USD 5 ceiling |
+| Cost test | `evaluation/test_estimate_main_study_cost.py` | `BD0AA610430E8E281992E71EFA6387E758DA104E82AC52B179B8A2FC2D8CADF7` | passed |
 
 The selector allocates exactly `ceil(0.25 × manual-review candidates)` across model-slot × knowledge-domain strata using Hamilton allocation and balances knowledge specificity, lexical cue level, answer form, and numeric status within those strata. Model-to-blind-code assignment additionally requires a private salt supplied through `TURKCUISINE_BLINDING_SALT`; the public seed cannot reveal the mapping.
 

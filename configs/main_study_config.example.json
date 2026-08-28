@@ -38,7 +38,7 @@
       "open_weight": false,
       "api_key_env": "ANTHROPIC_API_KEY",
       "thinking": "disabled",
-      "temperature": 0,
+      "temperature": null,
       "access_status": "credential_required"
     },
     {
@@ -57,7 +57,7 @@
       "model": "gemini-3.6-flash",
       "open_weight": false,
       "api_key_env": "GEMINI_API_KEY",
-      "thinking_level": "low",
+      "thinking_level": "minimal",
       "temperature": null,
       "access_status": "credential_required"
     },
@@ -67,7 +67,7 @@
       "model": "gemini-3.5-flash-lite",
       "open_weight": false,
       "api_key_env": "GEMINI_API_KEY",
-      "thinking_level": "low",
+      "thinking_level": "minimal",
       "temperature": null,
       "access_status": "credential_required"
     },
@@ -78,6 +78,7 @@
       "open_weight": true,
       "api_key_env": "GROQ_API_KEY",
       "reasoning_effort": "low",
+      "reasoning_format": "hidden",
       "temperature": 0,
       "access_status": "probed"
     },
@@ -88,6 +89,7 @@
       "open_weight": true,
       "api_key_env": "GROQ_API_KEY",
       "reasoning_effort": "none",
+      "reasoning_format": "hidden",
       "temperature": 0,
       "access_status": "probed"
     }

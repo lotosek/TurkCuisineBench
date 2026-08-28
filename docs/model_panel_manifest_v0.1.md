@@ -40,8 +40,9 @@ The prompt contains no worked example and no gold-answer information. The same U
 
 - One fresh, stateless request per item; no conversation carry-over.
 - Tools, browsing, retrieval, grounding, citations, files, and provider-side agents disabled.
-- Lowest supported reasoning/thinking mode: `none` or disabled where supported; `low` only where the endpoint does not permit disabling it. The exact request field and returned usage are logged. This difference is a platform constraint, not hidden harmonization.
-- Temperature `0` where supported. If an endpoint rejects or ignores sampling parameters, omit them and record the omission; do not emulate them client-side.
+- Lowest supported reasoning/thinking mode: OpenAI `none`; Anthropic explicitly disabled; Gemini `minimal`; Qwen `none`; and GPT-OSS `low`, because its endpoint does not permit disabling reasoning. The exact request field and returned usage are logged. These differences are platform constraints, not hidden harmonization.
+- Reasoning traces are excluded from the recorded answer field. Groq receives `reasoning_format=hidden`; OpenAI reasoning output is not read as answer text; Anthropic thinking is disabled; and Gemini thinking summaries are not requested.
+- Temperature `0` where supported. Claude Sonnet 5 and Gemini 3.x reject or discourage non-default sampling controls, so those fields are omitted and the omission is recorded rather than emulated client-side.
 - Maximum completion budget: 128 provider-reported completion tokens. Visible responses are never substantively truncated by the scorer; termination metadata is retained.
 - UTF-8 input/output; raw response retained before normalization.
 - No retry because an answer is wrong, verbose, or surprising. Up to two retries are allowed only for logged transport/rate-limit/server failures, using the identical payload and model ID.
@@ -61,7 +62,7 @@ The execution file contains only `item_id` and `question_tr`. Gold answers, acce
 
 ## 7. Verification record and current blockers
 
-The OpenAI and Groq model lists were also checked through their authenticated model-list endpoints without exposing credentials. OpenAI and Groq probes used only the neutral string `Return exactly OK.` and no benchmark content. Anthropic and Google remain unprobed because credentials are absent. Prices and availability must be rechecked on the actual execution date because they can change.
+The OpenAI and Groq model lists were also checked through their authenticated model-list endpoints without exposing credentials. OpenAI and Groq probes used only the neutral string `Return exactly OK.` and no benchmark content. Anthropic and Google remain unprobed because credentials are absent. On 2026-08-28, all eight requested IDs and their public list prices were rechecked on official documentation. The conservative, reproducible USD 5 run ceiling is recorded in [`model_cost_envelope_v0.1.md`](model_cost_envelope_v0.1.md). Prices and availability must still be checked immediately before execution because they can change.
 
 Official references checked on 2026-08-28:
 

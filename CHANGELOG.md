@@ -9,6 +9,8 @@
 - Kept all Test wording, answers, reviewer/adjudication records, mappings, and checksums outside Git; only aggregate M3 status is public-safe.
 - Prospectively froze Statistical Analysis Plan v1.0, the deterministic 25% response-review overlap selector, and seed `20260828`; blind-code generation additionally requires a private salt that is not stored in Git.
 - Passed selector unit tests and a 24-request offline schedule dry run using three synthetic non-Test fixtures; no provider endpoint was called.
+- Rechecked all eight requested IDs and list prices on official provider documentation, registered a reproducible conservative USD 5 run ceiling, and added payload tests for provider-neutral reasoning controls.
+- Corrected the Anthropic request builder to transmit explicit thinking disablement, set Gemini to its lowest supported `minimal` level, and hid Groq reasoning traces from the answer field.
 - Left M0 and full M4 open. No Test endpoint call is authorized until the ethics/exemption record, remaining access probes, exact equal-treatment panel, current prices/cost ceiling, configuration, analysis plan, and final non-Test fixture dry run are frozen.
 
 ## 2026-08-28 — Main-study M0 audit and domain freeze
