@@ -26,6 +26,7 @@ results/pilot/pilot_run_v0.3_scored.csv
 workbooks/*Reviewer*
 workbooks/*Reconciled*
 workbooks/*Consensus*
+workbooks/*Adjudicator*
 
 # Generated QA artifacts
 *.inspect.ndjson

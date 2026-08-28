@@ -16,7 +16,9 @@ The benchmark is designed around item-level provenance, conservative answer norm
 - All 46 non-exact pilot responses received independent double coding. Pre-adjudication decision agreement was 93.5% (Cohen's κ = .801); operation coding among the 35 responses jointly coded incorrect was perfectly concordant (κ = 1.000). Five routed cases were resolved through third-review adjudication.
 - The final pilot consensus contains 21 exact accepted-answer matches and 9 manually verified correct responses, for 30/72 semantic accuracy (41.7%). These aggregate figures validate the pipeline and are not used as a model leaderboard.
 - The pilot error taxonomy is frozen as `Taxonomy v1.0` for prospective main-study coding.
-- The main Test benchmark is under development and is not included in this repository.
+- The main Test benchmark is under development and is not included in this repository. The current prospective gate status is recorded in [`docs/main_study_status.md`](docs/main_study_status.md).
+- A private 72-item candidate master and reviewer pack have passed automated M1–M2 checks, but every item remains pending M3 human source validation. The locked primary agreement sample is 18 items and the risk-expanded second-review set is 30 items.
+- The provisional eight-model M4 panel and provider-neutral prompt rules are documented in [`docs/model_panel_manifest_v0.1.md`](docs/model_panel_manifest_v0.1.md); this is not authorization to execute the private Test.
 - No model-level pilot ranking is released. Private reviewer returns, adjudication records, model-to-review mappings, and row-level consensus audit files remain outside Git.
 
 The frozen Dev set may be used to debug the prompt, response capture, normalization, abstention, and scoring pipeline. It must not be used for headline leaderboard claims. The main Test set will remain separate and private until its evaluation protocol is frozen.

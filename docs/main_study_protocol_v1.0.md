@@ -22,7 +22,8 @@
 |---|---|
 | Test size | 72 scored items; if fewer than 72 survive validation, expand the official-source fact pool before model execution rather than weakening inclusion rules |
 | Knowledge domains | Six domains, target 12 items per domain |
-| Specificity | 60 L0 items and 12 L1 boundary items; no L2 items |
+| Lexical cue level | 60 L0 items and 12 L1 boundary items; no L2 items |
+| Knowledge specificity | Recorded separately as General, Regional, Local, Technical, or a justified compound label |
 | Numeric answers | Controlled minority of 4–6 items |
 | Sources | Official or institutional sources, with preference for TÜRKPATENT, UNESCO, and Turkish Ministry/Kültür Portalı records |
 | Primary model panel | Preferred eight models; minimum six, representing at least three providers, at least two open-weight models, and more than one capability/size tier |
@@ -35,12 +36,27 @@
 
 The 72-item target provides twelve items per domain and a manageable paired design. It is a coverage and feasibility target, not a claim of universal statistical adequacy. Confidence intervals and item-clustered analyses must accompany all estimates.
 
+### Frozen operational domain definitions
+
+The six domains are mutually exclusive primary labels assigned to the fact requested by the question. Secondary culinary features may be recorded in notes, but they do not change the primary domain.
+
+| Code | Domain | Operational inclusion rule |
+|---|---|---|
+| K1 | Dishes, Products & Geographic Associations | The requested fact is the official geographic association, locality, or regional attribution of a named dish or food product. Product names that directly reveal the answer are excluded as L2. |
+| K2 | Ingredients & Composition | The requested fact is an ingredient, component, filling, garnish, raw material, or compositional relation. |
+| K3 | Preparation & Cooking Techniques | The requested fact is a preparation sequence, cooking method, tool, vessel, fuel, temperature stage, or transformation process. |
+| K4 | Geographical Indications & Product Specifications | The requested fact is a registered specification, measurable production constraint, product class, registration attribute, or other requirement established by an official GI record. Geographic origin alone remains K1. |
+| K5 | Culinary Terminology & Traditional Practices | The requested fact is a culinary term, named local practice, service convention, production role, or customary action. |
+| K6 | Culinary History, Heritage & Cultural Context | The requested fact is a historical person/event, heritage-list context, ritual meaning, social function, transmission context, or commemorative association. |
+
+These labels describe knowledge content rather than empirical difficulty. Specificity and lexical leakage remain separate item-level variables.
+
 ## 3. Research questions and hypotheses
 
 ### Research questions
 
 - **RQ1:** How does source-grounded semantic accuracy differ across the evaluated models?
-- **RQ2:** How does performance vary by knowledge domain, specificity level, answer form, and numeric-answer status?
+- **RQ2:** How does performance vary by knowledge domain, knowledge specificity, lexical cue level, answer form, and numeric-answer status?
 - **RQ3:** How large is the gap between strict normalized exact match and adjudicated semantic accuracy?
 - **RQ4:** Which error operations and semantic targets are most prevalent overall and within each model?
 - **RQ5:** How frequently do models abstain or produce technically invalid responses under identical closed-book conditions?
@@ -48,7 +64,7 @@ The 72-item target provides twelve items per domain and a manageable paired desi
 ### Confirmatory hypotheses
 
 - **H1:** Semantic accuracy differs across models under the paired Test-item design.
-- **H2:** Accuracy is lower on L0 items than on L1 boundary items because L1 questions contain limited contextual cues.
+- **H2:** Accuracy is lower on L0 than on L1 lexical-cue items because L1 questions contain limited contextual cues. This contrast concerns `lexical_leakage`, not the separate `knowledge_specificity` field.
 - **H3:** Strict exact-match accuracy is lower than adjudicated semantic accuracy because some correct Turkish answers use legitimate inflectional, word-order, paraphrastic, or more-specific forms.
 
 Error-category differences are exploratory unless a directional hypothesis is registered before model execution.
@@ -110,7 +126,7 @@ Error-category differences are exploratory unless a directional hypothesis is re
 
 - Exactly 12 items from each of the six knowledge domains.
 - 60 L0 and 12 L1 items; 0 L2.
-- At least 16 local-terminology items.
+- At least 16 items targeting culinary terminology or a named traditional practice, role, service convention, or customary action. This operational flag is broader than geographic locality alone and is reported as `terminology_or_traditional_practice`.
 - At least 12 technical culinary-process/tool items.
 - At least 12 cultural/heritage-context items.
 - At least 16 single-word gold answers.
@@ -134,6 +150,7 @@ These answer-form and content targets may overlap; they are not mutually exclusi
 2. Each item receives one independent validation by a qualified colleague who has not seen model outputs.
 3. Before validation begins, select a stratified 25% of items for a second independent validation. Balance the overlap by domain, specificity, answer form, numeric status, and ambiguity risk.
 4. Require 100% additional review for all L1, numeric, medium/high ambiguity, or low-confidence cases even if this exceeds 25%.
+   The locked 18-item stratified subset is the primary agreement sample. Risk-triggered additions are also double-reviewed but are reported separately as a sensitivity agreement estimate because the enriched set is not prevalence-representative.
 5. Validate source support, question clarity, gold correctness, accepted-answer completeness, leakage level, and domain assignment separately.
 6. Route all disagreements and low-confidence decisions to adjudication. Preserve the pre-adjudication labels.
 7. Revise items only from source-grounded reviewer recommendations; rerun all integrity checks after revision.
@@ -141,7 +158,7 @@ These answer-form and content targets may overlap; they are not mutually exclusi
 ### Gate M3
 
 - [ ] Every final item has lead-researcher and independent-review approval.
-- [ ] The preselected overlap is complete and agreement is reported before adjudication.
+- [ ] The 18-item primary agreement sample and all risk-triggered additions are complete; agreement is reported separately for the primary sample and the full enriched second-review set before adjudication.
 - [ ] All disagreements and flags are resolved.
 - [ ] No item remains medium/high ambiguity without an explicit inclusion justification.
 
@@ -223,7 +240,7 @@ These answer-form and content targets may overlap; they are not mutually exclusi
 
 1. Replace provider/model identifiers with opaque run IDs before human review.
 2. After automatic routing but before anyone reads non-exact responses, select 25% of manual-review rows using the frozen seed.
-3. Stratify the overlap by model slot, knowledge domain, L0/L1, answer form, and numeric status.
+3. Stratify the overlap by model slot, knowledge domain, knowledge specificity, L0/L1 lexical cue level, answer form, and numeric status.
 4. Lock and checksum the overlap list. Do not increase or redirect overlap after seeing model quality.
 
 ### Coding

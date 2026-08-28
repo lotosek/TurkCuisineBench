@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-08-28 — Main-study M0 audit and domain freeze
+
+- Recorded a conditional M0 pass for M1–M2 preparation, including frozen-artifact checksums, private role codes, ethics status, and Git privacy controls.
+- Identified that the complete `F001–F118` master pool had not been saved locally; the frozen 36 Dev fact IDs remain the authoritative Test-exclusion list while the official-source pool is reconstructed and expanded.
+- Resolved a prospective documentation inconsistency by defining all six knowledge domains and adding `K1 — Dishes, Products & Geographic Associations` before Test item selection.
+- Corrected the protocol terminology so L0/L1 denotes lexical cue level (`lexical_leakage`) rather than the separate knowledge-specificity variable.
+- Added an ignore rule for future adjudicator workbooks; the existing tracked Dev adjudicator pack is de-identified and must not enter the eventual sanitized public release.
+- Constructed a private 72-item main-study candidate set in the new `TF001–TF072` namespace from official TÜRKPATENT, Ministry Culture Portal, and UNESCO records; no Test questions or answers were added to Git.
+- Passed candidate-stage automated QC: 12 items per domain, 60 L0/12 L1/0 L2, six numeric items, complete accepted-answer coverage, no exact Dev-question overlap, no same-source/same-gold Dev reuse, and no formula errors.
+- Verified live accessibility of all 38 unique official-source URLs used by the candidate pool.
+- Corrected the M3 implementation to preserve an 18-item balanced primary agreement sample while expanding second review to 30 items under the prespecified L1/numeric/ambiguity risk rule.
+- Renamed the overbroad `local_terminology` mix flag to `terminology_or_traditional_practice` before Test freeze.
+- Added a provisional eight-slot, four-provider M4 model/prompt manifest. Non-Test probes passed for both OpenAI and both Groq slots; Anthropic and Google access remains pending.
+- Added a provider-neutral main-study runner with an M4 authorization lock, question-only schema enforcement, deterministic interleaving, technical-only retries, model-drift stop, and raw-capture hashing. Syntax, dry-run, and closed-gate refusal tests passed without Test data.
+
 ## 2026-08-27 — Pilot consensus and Taxonomy v1.0 freeze
 
 - Completed independent double coding of all 46 non-exact pilot responses.

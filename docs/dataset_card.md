@@ -22,11 +22,14 @@ TurkCuisineBench is a manually curated, source-grounded benchmark for Turkish sh
 
 ## Knowledge domains
 
+- Dishes, products, and geographic associations
 - Ingredients and composition
 - Preparation and cooking techniques
 - Geographical indications and product specifications
 - Culinary terminology and traditional practices
 - Culinary history, heritage, and cultural context
+
+The operational definitions and decision boundary between geographic association (K1) and registered product specification (K4) are frozen in [`main_study_protocol_v1.0.md`](main_study_protocol_v1.0.md).
 
 ## Data fields
 
