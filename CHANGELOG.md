@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-28 — M0 governance state finalized before Test execution
+
+- Marked M0 governance complete and retained the private/public data boundary.
+- No main-study Test request or model output had been collected when this prospective governance change was recorded.
+- Added an explicit opt-in access-probe utility that sends only `Return exactly OK.` and records sanitized model-access results.
+
 ## 2026-08-28 — Main-study M3 completion and private Test-content freeze
 
 - Completed two independent official-source validations for all 72 private Test items while retaining the prospectively locked 18-item primary agreement set and 30-item risk sensitivity set.

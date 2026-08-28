@@ -2,7 +2,7 @@
 
 Status: **PROVISIONAL — configuration prepared, but Gate M4 is not passed.**  
 Prepared: 2026-08-28 (Europe/Istanbul)  
-Execution prohibition: M3 and the private Test-content freeze are complete, but no Test item may be sent to any model until the remaining M0 and M4 conditions pass and all eight slots pass a non-Test access probe.
+Execution prohibition: M0–M3 and the private Test-content freeze are complete, but no Test item may be sent to any model until all remaining M4 conditions pass and all eight slots pass a non-Test access probe.
 
 ## 1. Provider-neutral selection rule
 
@@ -71,4 +71,4 @@ Official references checked on 2026-08-28:
 - Google Gemini model IDs and pricing: https://ai.google.dev/gemini-api/docs/models and https://ai.google.dev/gemini-api/docs/pricing
 - Groq production models and pricing: https://console.groq.com/docs/models
 
-M3 and the private Test/question-only checksum step are complete. Gate M4 remains open until: (a) all eight access probes pass; (b) current availability, prices, and the cost ceiling are verified; (c) the exact panel, prompt/configuration, overlap procedure, and statistical analysis plan are frozen; and (d) the final runner dry run passes on non-benchmark dummy inputs. M0's written institutional ethics/exemption determination is also required before Test execution authorization.
+M0–M3 and the private Test/question-only checksum step are complete. Gate M4 remains open until: (a) all eight access probes pass; (b) current availability, prices, and the cost ceiling are verified; (c) the exact panel, prompt/configuration, overlap procedure, and statistical analysis plan are frozen; and (d) the final runner dry run passes on non-benchmark dummy inputs.

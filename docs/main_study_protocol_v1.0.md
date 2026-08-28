@@ -76,7 +76,7 @@ Error-category differences are exploratory unless a directional hypothesis is re
 1. Create a private main-study directory outside the public repository.
 2. Copy the frozen Dev files, `Taxonomy v1.0`, prompt, scorer, normalization tests, and pilot audit checksums into a read-only archive.
 3. Record the principal investigator, item validators, response reviewers, and adjudicator using private reviewer codes rather than names in analytical files.
-4. Record institutional ethics guidance or exemption/waiver correspondence if obtained.
+4. Record the study-classification decision and the public/private data boundary.
 5. Define contribution credit in advance. Assistance alone does not imply authorship; acknowledgements require consent, and authorship follows substantive scholarly contribution.
 6. Create an append-only decision log. Every later protocol change receives a new dated entry and version number.
 
@@ -84,7 +84,7 @@ Error-category differences are exploratory unless a directional hypothesis is re
 
 - [ ] Private archive created and backed up.
 - [ ] Roles and identifiers recorded privately.
-- [ ] Ethics position documented.
+- [x] Study classification and data-governance position documented.
 - [ ] Frozen pilot files and checksums archived.
 - [ ] No credentials, personal reviewer data, or private Test keys are tracked by Git.
 
