@@ -38,7 +38,7 @@ paper/                    English manuscript outline and table plan
 workbooks/                Editable internal research workbooks
 ```
 
-The ordered main-study workflow, decision gates, review design, and planned analysis are specified in [`docs/main_study_protocol_v1.0.md`](docs/main_study_protocol_v1.0.md). Instructions for continuing the project safely on another computer are in [`docs/home_computer_handoff.md`](docs/home_computer_handoff.md).
+The ordered main-study workflow, decision gates, review design, and planned analysis are specified in [`docs/main_study_protocol_v1.0.md`](docs/main_study_protocol_v1.0.md).
 
 ## Evaluation principle
 
