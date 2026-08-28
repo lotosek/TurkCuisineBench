@@ -137,10 +137,10 @@ These answer-form and content targets may overlap; they are not mutually exclusi
 
 ### Gate M2
 
-- [ ] Composition targets satisfied.
-- [ ] All 72 items pass leakage and ambiguity checks.
-- [ ] Accepted answers were written without access to model outputs.
-- [ ] Automated integrity checks pass.
+- [x] Composition targets satisfied.
+- [x] All 72 items pass leakage and ambiguity checks.
+- [x] Accepted answers were written without access to model outputs.
+- [x] Automated integrity checks pass.
 
 ## 7. Phase M3 — Independent item validation
 
@@ -157,10 +157,12 @@ These answer-form and content targets may overlap; they are not mutually exclusi
 
 ### Gate M3
 
-- [ ] Every final item has lead-researcher and independent-review approval.
-- [ ] The 18-item primary agreement sample and all risk-triggered additions are complete; agreement is reported separately for the primary sample and the full enriched second-review set before adjudication.
-- [ ] All disagreements and flags are resolved.
-- [ ] No item remains medium/high ambiguity without an explicit inclusion justification.
+- [x] Every final item has lead-researcher and independent-review approval.
+- [x] The 18-item primary agreement sample and all risk-triggered additions are complete; agreement is reported separately for the primary sample and the full enriched second-review set before adjudication.
+- [x] All disagreements and flags are resolved.
+- [x] No item remains medium/high ambiguity without an explicit inclusion justification.
+
+Implementation record (2026-08-28): both independent validators completed all 72 items. The locked 18-item comparison remains the primary agreement result, the risk-expanded 30-item set remains the prespecified sensitivity result, and the all-72 comparison is supplementary. Eleven disagreements were resolved by lead-researcher adjudication; this decision stage is not counted as a third independent review.
 
 ## 8. Phase M4 — Freeze Test, models, prompt, and analysis
 
@@ -200,7 +202,7 @@ These answer-form and content targets may overlap; they are not mutually exclusi
 
 ### Gate M4
 
-- [ ] Test and question-only files checksummed.
+- [x] Test and question-only files checksummed.
 - [ ] Exact model panel and expected cost recorded.
 - [ ] Prompt and execution configuration frozen.
 - [ ] Review-overlap seed and sampling script frozen.

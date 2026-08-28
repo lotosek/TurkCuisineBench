@@ -4,13 +4,15 @@ Last updated: 2026-08-28
 
 ## Current gate
 
-M0 has a **conditional governance pass**, M1 source-fact construction is complete at the candidate stage, and M2 automated item construction/QC has passed. Seventy-two private candidates were created from 38 accessible official-source URLs, with twelve items in each of K1–K6, 60 L0 items, 12 L1 items, no L2 items, and six numeric items. All candidates remain `candidate_pending_validation`.
+M0 has a **conditional governance pass** pending a written institutional ethics/exemption determination. M1 source-fact construction and M2 automated item construction/QC are complete. Seventy-two private items were created from 38 accessible official-source URLs, with twelve items in each of K1–K6, 60 L0 items, 12 L1 items, no L2 items, and six numeric items.
 
-M3 materials are prepared but M3 is not complete. The locked primary agreement sample contains 18 balanced items; the prespecified risk rule expands second independent review to 30 items so that all L1, numeric, and medium/high ambiguity cases are covered. The main-study Test set has not been frozen and no main-study Test request has been sent to any model.
+M3 is **complete**. Two independent validators reviewed all 72 items against the official sources. Pre-adjudication final-action agreement was 17/18 (94.4%) in the prospectively locked primary set, 26/30 (86.7%) in the prespecified risk sensitivity set, and 61/72 (84.7%) in the supplementary full-set comparison. Cohen's κ is 0 in all three comparisons because Reviewer B used only the `accept` category; raw agreement and marginal distributions therefore remain the primary interpretation. Eleven disagreements were resolved by lead-researcher adjudication: ten Reviewer A revisions were adopted and one custom source-grounded revision was entered. The final disposition is 61 unchanged items, 11 revised items, and zero exclusions.
+
+The private 72-item Test content, question-only execution file, and private scoring key were frozen and checksummed on 2026-08-28. This closes the **Test-content component of M4 only**. No question, gold answer, reviewer rationale, adjudication record, or checksum is stored in Git, and no main-study Test request has been sent to any model.
 
 The provisional M4 panel contains eight slots across OpenAI, Anthropic, Google, and Groq. Non-benchmark access probes passed for the two OpenAI and two Groq slots. Anthropic and Google remain unprobed because credentials are absent; the panel is therefore not frozen.
 
-The main-study runner has passed an offline dummy dry-run and a negative authorization test: with `execution_authorized=false`, it refuses network execution before loading any provider request. This is preparation evidence only and does not close M4.
+The main-study runner has passed an offline dummy dry-run and a negative authorization test: with `execution_authorized=false`, it refuses network execution before loading any provider request. This is preparation evidence only and does not close M4. Full M4 remains open until the exact panel, access probes, current cost ceiling, prompt/configuration, overlap procedure, statistical analysis plan, and final non-Test fixture dry run are frozen together.
 
 ## Open controls
 
@@ -24,10 +26,10 @@ The main-study runner has passed an offline dummy dry-run and a negative authori
 ## Next authorized work
 
 1. Obtain and archive the institutional ethics/exemption determination.
-2. Complete lead and independent item validation for all 72 candidates; complete the second review for the locked 30-row set.
-3. Adjudicate disagreements, preserve pre-adjudication labels, revise only from official-source evidence, and rerun all QC.
-4. Replace excluded candidates from new official sources rather than weakening quotas or ambiguity rules.
-5. Obtain Anthropic and Gemini access, run non-Test probes, then freeze the final Test, prompt, eight-model panel, runner, and checksums under M4.
+2. Obtain Anthropic and Gemini access and run only neutral, non-Test access probes.
+3. Recheck provider availability and prices, then freeze the exact equal-treatment panel and cost ceiling.
+4. Freeze the prompt/configuration, overlap audit seed/script, and statistical analysis plan.
+5. Run the final dry run on synthetic/non-Test fixtures only and record the M4 authorization decision.
 6. Do not call model endpoints with Test questions until Gates M0–M4 all pass.
 
-Aggregate candidate-stage QA is recorded in [`main_study_candidate_audit_v0.1.md`](main_study_candidate_audit_v0.1.md). The provisional provider-neutral panel is recorded in [`model_panel_manifest_v0.1.md`](model_panel_manifest_v0.1.md).
+Aggregate candidate-stage QA is recorded in [`main_study_candidate_audit_v0.1.md`](main_study_candidate_audit_v0.1.md), and the completed public-safe M3 outcome is recorded in [`main_study_item_validation_report_v1.0.md`](main_study_item_validation_report_v1.0.md). The provisional provider-neutral panel is recorded in [`model_panel_manifest_v0.1.md`](model_panel_manifest_v0.1.md).

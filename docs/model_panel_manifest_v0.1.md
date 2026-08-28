@@ -2,7 +2,7 @@
 
 Status: **PROVISIONAL — configuration prepared, but Gate M4 is not passed.**  
 Prepared: 2026-08-28 (Europe/Istanbul)  
-Execution prohibition: no Test item may be sent to any model until Gate M3 is complete, the final Test is frozen, and all eight slots pass a non-Test access probe.
+Execution prohibition: M3 and the private Test-content freeze are complete, but no Test item may be sent to any model until the remaining M0 and M4 conditions pass and all eight slots pass a non-Test access probe.
 
 ## 1. Provider-neutral selection rule
 
@@ -12,14 +12,14 @@ The panel is selected by prespecified structural criteria rather than by expecte
 
 | Slot | Inference provider | Model developer/family | Exact requested model ID | Tier | Open-weight | Access probe on 2026-08-28 | M4 state |
 |---|---|---|---|---|---:|---|---|
-| S01 | OpenAI API | OpenAI GPT | `gpt-5.5-2026-04-23` | frontier | no | PASS; returned requested ID and `OK` | ready, pending M3 |
-| S02 | OpenAI API | OpenAI GPT | `gpt-5.4-mini-2026-03-17` | efficient | no | PASS; returned requested ID and `OK` | ready, pending M3 |
+| S01 | OpenAI API | OpenAI GPT | `gpt-5.5-2026-04-23` | frontier | no | PASS; returned requested ID and `OK` | ready; panel freeze pending |
+| S02 | OpenAI API | OpenAI GPT | `gpt-5.4-mini-2026-03-17` | efficient | no | PASS; returned requested ID and `OK` | ready; panel freeze pending |
 | S03 | Anthropic Claude API | Anthropic Claude | `claude-sonnet-5` | frontier/standard | no | not run; credential absent | BLOCKED: access required |
 | S04 | Anthropic Claude API | Anthropic Claude | `claude-haiku-4-5-20251001` | efficient | no | not run; credential absent | BLOCKED: access required |
 | S05 | Google Gemini API | Google Gemini | `gemini-3.6-flash` | high capability/throughput | no | not run; credential absent | BLOCKED: access required |
 | S06 | Google Gemini API | Google Gemini | `gemini-3.5-flash-lite` | efficient | no | not run; credential absent | BLOCKED: access required |
-| S07 | GroqCloud | OpenAI GPT-OSS | `openai/gpt-oss-120b` | large open-weight | yes | PASS with minimum supported reasoning effort (`low`) and 128-token completion budget | ready, pending M3 |
-| S08 | GroqCloud | Alibaba Qwen | `qwen/qwen3.6-27b` | mid-size open-weight | yes | PASS with reasoning disabled and returned `OK` | ready, pending M3 |
+| S07 | GroqCloud | OpenAI GPT-OSS | `openai/gpt-oss-120b` | large open-weight | yes | PASS with minimum supported reasoning effort (`low`) and 128-token completion budget | ready; panel freeze pending |
+| S08 | GroqCloud | Alibaba Qwen | `qwen/qwen3.6-27b` | mid-size open-weight | yes | PASS with reasoning disabled and returned `OK` | ready; panel freeze pending |
 
 Replacement rule: a slot may be replaced only before Test execution, for documented access, retirement, endpoint, or budget failure. The replacement must preserve the provider/tier/open-weight structure. No replacement may be based on Dev performance alone. Any replacement requires a dated protocol amendment and a new access probe.
 
@@ -70,4 +70,4 @@ Official references checked on 2026-08-28:
 - Google Gemini model IDs and pricing: https://ai.google.dev/gemini-api/docs/models and https://ai.google.dev/gemini-api/docs/pricing
 - Groq production models and pricing: https://console.groq.com/docs/models
 
-Gate M4 remains open until: (a) M3 is complete; (b) all eight access probes pass; (c) the final private Test and question-only file are checksummed; and (d) the runner dry-run passes on non-benchmark dummy inputs.
+M3 and the private Test/question-only checksum step are complete. Gate M4 remains open until: (a) all eight access probes pass; (b) current availability, prices, and the cost ceiling are verified; (c) the exact panel, prompt/configuration, overlap procedure, and statistical analysis plan are frozen; and (d) the final runner dry run passes on non-benchmark dummy inputs. M0's written institutional ethics/exemption determination is also required before Test execution authorization.

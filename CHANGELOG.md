@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-08-28 — Main-study M3 completion and private Test-content freeze
+
+- Completed two independent official-source validations for all 72 private Test items while retaining the prospectively locked 18-item primary agreement set and 30-item risk sensitivity set.
+- Recorded pre-adjudication final-action agreement of 94.4% for the primary 18, 86.7% for the risk 30, and 84.7% for the supplementary all-72 comparison. Cohen's κ is 0 because Reviewer B used only one action category and is interpreted with raw agreement and margins.
+- Resolved 11 disagreements through lead-researcher adjudication without treating the lead as a third independent reviewer: 10 Reviewer A revisions adopted, one custom source-grounded revision, and no exclusions.
+- Frozen 61 unchanged and 11 revised items in a private 72-item Test master with separate question-only and private-key JSONL files and verified SHA-256 checksums.
+- Kept all Test wording, answers, reviewer/adjudication records, mappings, and checksums outside Git; only aggregate M3 status is public-safe.
+- Left M0 and full M4 open. No Test endpoint call is authorized until the ethics/exemption record, remaining access probes, exact equal-treatment panel, current prices/cost ceiling, configuration, analysis plan, and final non-Test fixture dry run are frozen.
+
 ## 2026-08-28 — Main-study M0 audit and domain freeze
 
 - Recorded a conditional M0 pass for M1–M2 preparation, including frozen-artifact checksums, private role codes, ethics status, and Git privacy controls.
@@ -58,6 +67,5 @@
 
 ### Pending
 
-- Construct and independently validate the 72-item private Test set.
 - Freeze the exact main-study model panel, execution manifest, review overlap, and statistical analysis plan.
 - Execute, adjudicate, analyze, and release the main study under the versioned protocol.
