@@ -2,7 +2,7 @@
 
 Status: **M5 complete; technical reconciliation passed before correctness scoring**
 
-Execution date: 2026-08-31  
+Execution date: 2026-08-31
 Collection window: 07:48:50–08:27:10 UTC
 
 ## Scope

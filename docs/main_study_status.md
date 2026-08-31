@@ -16,7 +16,7 @@ The main-study runner passed the final offline dummy dry run and a negative auth
 
 Main-study execution was completed in the frozen interleaved order on 2026-08-31. All 576 expected model–item records were captured, with 72 records for each slot, no terminal request error, and no requested/returned model-ID drift. There were 574 technically valid responses and two technically invalid empty responses: one length termination in S07 and one provider content-filter termination in S06. Both slot-level invalid rates were 1.4%, below the prespecified 5% stopping threshold. Three transient technical failures succeeded on the second identical attempt. **Gate M5 is complete.** Aggregate execution QA is reported in [`m5_execution_report_v1.0.md`](m5_execution_report_v1.0.md).
 
-The non-provider-dependent M4 methods components are now prospectively frozen: Statistical Analysis Plan v1.0, the deterministic 25% blinded review-overlap selector, and seed `20260828`. The selector uses a separate private blinding salt, so its public seed does not reveal model identities. A three-item synthetic dry run passed without network access; it must be repeated after the exact provider panel and final configuration are frozen. Checksums and the remaining blockers are recorded in [`m4_methods_manifest_v0.1.md`](m4_methods_manifest_v0.1.md).
+M6 automatic routing and reviewer-material preparation were completed on 2026-08-31 under the frozen scorer. The 576 records comprise 187 exact registered-answer matches, 61 explicit abstentions, 326 technically valid non-exact responses requiring semantic review, and two technical invalids. Before any non-exact response was semantically inspected, the registered 25% selector froze an 82-response independent overlap. Private workbooks now contain all 326 lead-review rows and only the frozen 82 rows for the second reviewer. Both passed identity-leakage, formula, row-count, and rendered-layout checks. **Gate M6 remains open pending independent human coding and pre-adjudication agreement.** Public-safe preparation details are in [`m6_scoring_and_review_preparation_v1.0.md`](m6_scoring_and_review_preparation_v1.0.md).
 
 All eight requested model IDs and public list prices were rechecked against official provider documentation on 2026-08-31. A deliberately conservative three-attempt, full-token-use envelope plus 50% contingency produces a registered USD 5 run ceiling. Technical access and the required data-use tier pass for all eight slots. Details are in [`model_cost_envelope_v0.1.md`](model_cost_envelope_v0.1.md).
 
@@ -30,9 +30,9 @@ All eight requested model IDs and public list prices were rechecked against offi
 
 ## Next authorized work
 
-1. Apply the frozen normalizer/scorer to the private raw responses without changing accepted answers.
-2. Freeze the 25% stratified overlap before any manual-review response is read.
-3. Generate model-blinded lead and second-review materials outside Git.
-4. Keep all Test questions, outputs, blind mappings, and scoring materials outside Git.
+1. The lead researcher completes all 326 blinded manual-review rows without seeing the second reviewer's decisions.
+2. The second reviewer independently completes only the frozen 82-response overlap.
+3. Lock and checksum both completed files before comparing labels; then calculate pre-adjudication agreement.
+4. Keep all Test questions, outputs, reviewer files, blind mappings, and scoring materials outside Git.
 
 Aggregate candidate-stage QA is recorded in [`main_study_candidate_audit_v0.1.md`](main_study_candidate_audit_v0.1.md), and the completed public-safe M3 outcome is recorded in [`main_study_item_validation_report_v1.0.md`](main_study_item_validation_report_v1.0.md). The provisional provider-neutral panel is recorded in [`model_panel_manifest_v0.1.md`](model_panel_manifest_v0.1.md).

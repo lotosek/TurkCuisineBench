@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-31 — Main-study M6 reviewer materials prepared
+
+- Applied the frozen scorer to all 576 private responses without changing the accepted-answer inventory: 187 exact matches, 61 explicit abstentions, 326 manual-review candidates, and two technical invalids.
+- Froze the registered 25% independent overlap at 82 of 326 manual-review candidates before semantic response inspection.
+- Generated private identity-blinded lead and second-review workbooks outside Git and verified row counts, formulas, identity removal, and rendered layouts.
+- Added only the public-safe scoring adapter, tests, and aggregate M6 preparation record; Test content, outputs, mappings, reviewer materials, and private checksums remain outside Git.
+
 ## 2026-08-31 — Main-study M5 execution completed
 
 - Captured all 576 prespecified model–item records in the frozen interleaved schedule, with 72 records for each of eight slots.

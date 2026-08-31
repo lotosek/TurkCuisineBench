@@ -1,6 +1,6 @@
 # TurkCuisineBench Main Study Protocol v1.0
 
-**Status:** Prospectively frozen before main-study responses; Gates M0–M5 completed on 2026-08-31.
+**Status:** Prospectively frozen before main-study responses; Gates M0–M5 completed and M6 reviewer materials prepared on 2026-08-31.
 
 **Canonical language:** Turkish benchmark items and responses; English manuscript and repository documentation.
 **Primary purpose:** Evaluate model knowledge of Turkish cuisine under source-grounded, closed-book, provider-neutral conditions while preserving strict Dev/Test separation.
@@ -258,7 +258,7 @@ Implementation record (2026-08-28): both independent validators completed all 72
 
 - [ ] Every non-exact response has a complete lead-researcher code.
 - [ ] Every preselected overlap response has an independent second code.
-- [ ] No reviewer sheet contains model/provider identity.
+- [x] No reviewer sheet contains model/provider identity.
 - [ ] Pre-adjudication agreement tables are locked.
 
 ## 11. Phase M7 — Reliability and adjudication
@@ -356,7 +356,7 @@ Assuming 72 Test items and eight models:
 
 - Primary model responses: 576.
 - If the pilot routing rate is approximately reproduced, roughly 350–400 responses may require lead-researcher review.
-- A 25% overlap would place approximately 90–100 responses with the second reviewer.
+- After frozen automatic routing, 326 responses required manual review; the ceiling of the registered 25% rule therefore placed 82 responses with the second reviewer.
 - Adjudication volume is expected to be substantially smaller and is triggered by disagreement or low confidence, not a fixed quota.
 
 | Target dates | Stage | Deliverable |
