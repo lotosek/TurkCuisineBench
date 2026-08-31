@@ -1,0 +1,97 @@
+{
+  "manifest_version": "1.0-frozen",
+  "execution_authorized": false,
+  "authorization_gate": "M4",
+  "random_seed": 20260828,
+  "max_completion_tokens": 128,
+  "system_prompt": "You are completing a closed-book Turkish short-answer benchmark about Turkish cuisine and culinary heritage. Do not browse, call tools, or use external sources. Give only the requested answer in Turkish, without explanation. If you do not know, output exactly: BİLMİYORUM",
+  "user_template": "Soru: {{question_tr}}\nYanıt:",
+  "retry_policy": {
+    "maximum_technical_retries": 2,
+    "retry_substantive_answers": false
+  },
+  "models": [
+    {
+      "slot": "S01",
+      "provider": "openai",
+      "model": "gpt-5.5-2026-04-23",
+      "open_weight": false,
+      "api_key_env": "OPENAI_API_KEY",
+      "reasoning_effort": "none",
+      "temperature": null,
+      "access_status": "probed"
+    },
+    {
+      "slot": "S02",
+      "provider": "openai",
+      "model": "gpt-5.4-mini-2026-03-17",
+      "open_weight": false,
+      "api_key_env": "OPENAI_API_KEY",
+      "reasoning_effort": "none",
+      "temperature": null,
+      "access_status": "probed"
+    },
+    {
+      "slot": "S03",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "open_weight": false,
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "thinking": "disabled",
+      "temperature": null,
+      "access_status": "probed"
+    },
+    {
+      "slot": "S04",
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-20251001",
+      "open_weight": false,
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "thinking": "disabled",
+      "temperature": 0,
+      "access_status": "probed"
+    },
+    {
+      "slot": "S05",
+      "provider": "google",
+      "model": "gemini-3.6-flash",
+      "open_weight": false,
+      "api_key_env": "GEMINI_API_KEY",
+      "thinking_level": "minimal",
+      "temperature": null,
+      "access_status": "probed_paid_tier"
+    },
+    {
+      "slot": "S06",
+      "provider": "google",
+      "model": "gemini-3.5-flash-lite",
+      "open_weight": false,
+      "api_key_env": "GEMINI_API_KEY",
+      "thinking_level": "minimal",
+      "temperature": null,
+      "access_status": "probed_paid_tier"
+    },
+    {
+      "slot": "S07",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "open_weight": true,
+      "api_key_env": "GROQ_API_KEY",
+      "reasoning_effort": "low",
+      "reasoning_format": "hidden",
+      "temperature": 0,
+      "access_status": "probed"
+    },
+    {
+      "slot": "S08",
+      "provider": "groq",
+      "model": "qwen/qwen3.6-27b",
+      "open_weight": true,
+      "api_key_env": "GROQ_API_KEY",
+      "reasoning_effort": "none",
+      "reasoning_format": "hidden",
+      "temperature": 0,
+      "access_status": "probed"
+    }
+  ]
+}

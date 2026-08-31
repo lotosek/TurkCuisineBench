@@ -203,11 +203,11 @@ Implementation record (2026-08-28): both independent validators completed all 72
 ### Gate M4
 
 - [x] Test and question-only files checksummed.
-- [ ] Exact model panel and expected cost recorded.
-- [ ] Prompt and execution configuration frozen.
+- [x] Exact model panel and expected cost recorded.
+- [x] Prompt and execution configuration frozen.
 - [x] Review-overlap seed and sampling script frozen.
 - [x] Statistical analysis plan versioned.
-- [ ] Dry run uses non-Test fixture items only.
+- [x] Dry run uses non-Test fixture items only.
 
 ## 9. Phase M5 — Main model execution
 

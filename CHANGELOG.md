@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-31 — Gate M4 completed prospectively
+
+- Verified Gemini Tier 1/Paid status with a positive prepaid balance and automatic reload disabled; retained personal billing evidence outside Git.
+- Froze the exact equal-treatment eight-model panel and `configs/main_study_config_v1.0.json` with the public authorization lock set to `false`.
+- Re-ran all unit tests and the final 24-request synthetic dry run; the deterministic schedule hash remained unchanged.
+- Closed Gate M4 before any private Test request and authorized the transition to append-only private M5 execution.
+
 ## 2026-08-31 — Eight-slot access verified; Gemini data-use gate retained
 
 - Passed neutral `Return exactly OK.` access probes for Claude Sonnet 5, Claude Haiku 4.5, Gemini 3.6 Flash, and Gemini 3.5 Flash-Lite without sending benchmark content; all requested and returned model IDs matched.
@@ -24,7 +31,7 @@
 - Passed selector unit tests and a 24-request offline schedule dry run using three synthetic non-Test fixtures; no provider endpoint was called.
 - Rechecked all eight requested IDs and list prices on official provider documentation, registered a reproducible conservative USD 5 run ceiling, and added payload tests for provider-neutral reasoning controls.
 - Corrected the Anthropic request builder to transmit explicit thinking disablement, set Gemini to its lowest supported `minimal` level, and hid Groq reasoning traces from the answer field.
-- Left M0 and full M4 open. No Test endpoint call is authorized until the ethics/exemption record, remaining access probes, exact equal-treatment panel, current prices/cost ceiling, configuration, analysis plan, and final non-Test fixture dry run are frozen.
+- Left M0 and full M4 open at that checkpoint. No Test endpoint call was authorized until the remaining governance record, access probes, exact equal-treatment panel, current prices/cost ceiling, configuration, analysis plan, and final non-Test fixture dry run were frozen.
 
 ## 2026-08-28 — Main-study M0 audit and domain freeze
 

@@ -1,6 +1,6 @@
 # M4 methods manifest v0.1
 
-Status: **non-provider-dependent methods components frozen; full M4 open**
+Status: **Gate M4 complete; all methods and execution controls frozen before Test calls**
 
 Created: 2026-08-28; updated: 2026-08-31
 
@@ -11,9 +11,9 @@ Created: 2026-08-28; updated: 2026-08-31
 | Overlap-selector test | `evaluation/test_select_review_overlap.py` | `4F14BFB2636A3A1EBED6B38FA0D0A8CF23C696C29F3D60E62607232C860A4E7C` | passed |
 | Review-overlap seed | `20260828` | not applicable | frozen |
 | Non-Test fixture | `evaluation/fixtures/non_test_questions.jsonl` | `53AFD142C35B7BDAE497165737453C8391A675A301B256682B9BD6D7FF48DEF7` | synthetic fixture only |
-| Provisional configuration | `configs/main_study_config.example.json` | `86BF11A16FFEBEF06C0718B866D67867634091C96D8554192573CD9267312AFC` | not final; Gemini data-use gate pending |
+| Frozen public configuration | `configs/main_study_config_v1.0.json` | `95501CEC4AA89A3A58D45653B40A435882D8FB3319E90F177CF3658D12E6772C` | frozen with authorization lock `false` |
 | Main runner | `evaluation/run_main_study.py` | `CD3EFF8DDDCA989AFAE9C059855083F17FFE355021CDE3960F36A40885D9C21C` | authorization lock retained |
-| Provider-payload test | `evaluation/test_main_study_payloads.py` | `BFCF0EE5C92D3B27566199A6598CBE0FA97A0168925F53C59DBDFDAC2CBA4035` | passed |
+| Provider-payload test | `evaluation/test_main_study_payloads.py` | `DBE41F11ABBD736539EC3752766C6C9A0B169BACDC3098D7B8D47C1F0FBA6362` | passed against frozen configuration |
 | Neutral access-probe utility | `evaluation/probe_model_access.py` | `FDB025306B72B73746C2C3F9518153B05DB5C84F74ABF4A57916B9ED90A792D0` | network opt-in; slot-selective; sends no benchmark content |
 | Access-probe test | `evaluation/test_probe_model_access.py` | `EFFCED0311F4092BF4C6C1BC481E30CA54CFD11F3DFFB544EF47F0A72CEB631C` | passed; offline test only |
 | Price snapshot | `configs/main_study_costs_2026-08-31.json` | `FF4DE82F04317C39DFBABBE675B2B506968539B5A6E644D6CCD82B66AB6A4CD7` | verified 2026-08-31; recheck before execution |
@@ -22,6 +22,6 @@ Created: 2026-08-28; updated: 2026-08-31
 
 The selector allocates exactly `ceil(0.25 × manual-review candidates)` across model-slot × knowledge-domain strata using Hamilton allocation and balances knowledge specificity, lexical cue level, answer form, and numeric status within those strata. Model-to-blind-code assignment additionally requires a private salt supplied through `TURKCUISINE_BLINDING_SALT`; the public seed cannot reveal the mapping.
 
-The preparatory dry run used three synthetic, non-culinary Test items, generated 24 scheduled requests across the eight provisional slots, made no network call, and produced schedule hash `2278113054669e6ec639e81d5384ab4ac40ba0e40e0da7742bb277eff9ed32b7`. This confirms schema, prompt construction, and deterministic scheduling only. A final non-Test fixture dry run must be repeated after the exact panel and final configuration are frozen.
+The final dry run used three synthetic, non-culinary fixture items, generated 24 scheduled requests across the eight frozen slots, made no network call, and produced schedule hash `2278113054669e6ec639e81d5384ab4ac40ba0e40e0da7742bb277eff9ed32b7`. This confirms schema, prompt construction, and deterministic scheduling.
 
-All eight neutral access probes pass and current availability/prices were reverified on 2026-08-31. Full M4 remains open pending resolution of the Gemini Paid Tier/data-use requirement, exact equal-treatment panel and final configuration checksum, and the repeated non-Test dry run.
+All eight neutral access probes pass; current availability/prices were reverified; Gemini Tier 1/Paid status with positive prepaid balance was verified; the exact equal-treatment panel and configuration were checksummed; and the final non-Test dry run passed on 2026-08-31. Gate M4 is complete. The public configuration retains `execution_authorized=false`; a private execution copy may change only that lock after checksum verification and must be recorded in the private run manifest.

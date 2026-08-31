@@ -1,29 +1,29 @@
 # TurkCuisineBench Main-Study Model and Prompt Manifest v0.1
 
-Status: **PROVISIONAL — configuration prepared, but Gate M4 is not passed.**  
-Prepared: 2026-08-28; access updated 2026-08-31 (Europe/Istanbul)
-Execution prohibition: M0–M3 and the private Test-content freeze are complete, but no Test item may be sent to any model until all remaining M4 conditions pass and all eight slots pass a non-Test access probe.
+Status: **FROZEN — Gate M4 passed on 2026-08-31 before Test execution.**
+Prepared: 2026-08-28; frozen: 2026-08-31 (Europe/Istanbul)
+Execution control: Test calls require the frozen private question-only file and a private execution copy of `configs/main_study_config_v1.0.json` in which only the authorization lock is changed from `false` to `true` after checksum verification.
 
 ## 1. Provider-neutral selection rule
 
 The panel is selected by prespecified structural criteria rather than by expected performance: eight text-generation models; at least three inference providers; at least two openly available/open-weight model families; at least two capability/cost tiers; and exact provider-returned model identifiers archived at execution. A developer and its inference host are recorded separately. No provider receives extra tools, retrieval, web access, examples, feedback, or retries for substantive errors.
 
-## 2. Provisional eight-model panel
+## 2. Frozen eight-model panel
 
 | Slot | Inference provider | Model developer/family | Exact requested model ID | Tier | Open-weight | Access-probe result | M4 state |
 |---|---|---|---|---|---:|---|---|
-| S01 | OpenAI API | OpenAI GPT | `gpt-5.5-2026-04-23` | frontier | no | PASS; returned requested ID and `OK` | ready; panel freeze pending |
-| S02 | OpenAI API | OpenAI GPT | `gpt-5.4-mini-2026-03-17` | efficient | no | PASS; returned requested ID and `OK` | ready; panel freeze pending |
-| S03 | Anthropic Claude API | Anthropic Claude | `claude-sonnet-5` | frontier/standard | no | PASS 2026-08-28; returned requested ID and `OK` | ready; panel freeze pending |
-| S04 | Anthropic Claude API | Anthropic Claude | `claude-haiku-4-5-20251001` | efficient | no | PASS 2026-08-28; returned requested ID and `OK` | ready; panel freeze pending |
-| S05 | Google Gemini API | Google Gemini | `gemini-3.6-flash` | high capability/throughput | no | PASS 2026-08-31; returned requested ID and `OK` | BLOCKED: Paid Tier/data-use status required |
-| S06 | Google Gemini API | Google Gemini | `gemini-3.5-flash-lite` | efficient | no | PASS 2026-08-31; returned requested ID and `OK` | BLOCKED: Paid Tier/data-use status required |
-| S07 | GroqCloud | OpenAI GPT-OSS | `openai/gpt-oss-120b` | large open-weight | yes | PASS with minimum supported reasoning effort (`low`) and 128-token completion budget | ready; panel freeze pending |
-| S08 | GroqCloud | Alibaba Qwen | `qwen/qwen3.6-27b` | mid-size open-weight | yes | PASS with reasoning disabled and returned `OK` | ready; panel freeze pending |
+| S01 | OpenAI API | OpenAI GPT | `gpt-5.5-2026-04-23` | frontier | no | PASS; returned requested ID and `OK` | frozen/ready |
+| S02 | OpenAI API | OpenAI GPT | `gpt-5.4-mini-2026-03-17` | efficient | no | PASS; returned requested ID and `OK` | frozen/ready |
+| S03 | Anthropic Claude API | Anthropic Claude | `claude-sonnet-5` | frontier/standard | no | PASS 2026-08-28; returned requested ID and `OK` | frozen/ready |
+| S04 | Anthropic Claude API | Anthropic Claude | `claude-haiku-4-5-20251001` | efficient | no | PASS 2026-08-28; returned requested ID and `OK` | frozen/ready |
+| S05 | Google Gemini API | Google Gemini | `gemini-3.6-flash` | high capability/throughput | no | PASS 2026-08-31; returned requested ID and `OK` | frozen/ready; Paid Tier verified |
+| S06 | Google Gemini API | Google Gemini | `gemini-3.5-flash-lite` | efficient | no | PASS 2026-08-31; returned requested ID and `OK` | frozen/ready; Paid Tier verified |
+| S07 | GroqCloud | OpenAI GPT-OSS | `openai/gpt-oss-120b` | large open-weight | yes | PASS with minimum supported reasoning effort (`low`) and 128-token completion budget | frozen/ready |
+| S08 | GroqCloud | Alibaba Qwen | `qwen/qwen3.6-27b` | mid-size open-weight | yes | PASS with reasoning disabled and returned `OK` | frozen/ready |
 
 Replacement rule: a slot may be replaced only before Test execution, for documented access, retirement, endpoint, or budget failure. The replacement must preserve the provider/tier/open-weight structure. No replacement may be based on Dev performance alone. Any replacement requires a dated protocol amendment and a new access probe.
 
-## 3. Frozen task prompt candidate
+## 3. Frozen task prompt
 
 System instruction:
 
@@ -64,7 +64,7 @@ The execution file contains only `item_id` and `question_tr`. Gold answers, acce
 
 The OpenAI, Groq, and Google model lists were checked through authenticated model-list endpoints without exposing credentials. All eight access probes used only the neutral string `Return exactly OK.` and no benchmark content. On 2026-08-31, all eight requested IDs and their public list prices were rechecked on official documentation. The conservative, reproducible USD 5 run ceiling is recorded in [`model_cost_envelope_v0.1.md`](model_cost_envelope_v0.1.md). Prices and availability must still be checked immediately before execution because they can change.
 
-Google AI Studio showed `No billing account` on 2026-08-31. Because Google documents different data-use treatment for Free Tier and Paid Tier, technical access alone does not authorize private Test execution for S05–S06. Paid Tier must be verified or the panel must be prospectively amended before M4 closes.
+Google AI Studio showed Tier 1/Paid with a positive prepaid balance on 2026-08-31; automatic reload was off. This resolved the S05–S06 data-use-tier condition before any Test request. Personal billing identifiers, payment details, and balance evidence remain outside Git.
 
 Official references checked on 2026-08-31:
 
@@ -73,4 +73,4 @@ Official references checked on 2026-08-31:
 - Google Gemini model IDs and pricing: https://ai.google.dev/gemini-api/docs/models and https://ai.google.dev/gemini-api/docs/pricing
 - Groq production models and pricing: https://console.groq.com/docs/models
 
-M0–M3 and the private Test/question-only checksum step are complete. All eight access probes pass. Gate M4 remains open until: (a) the Gemini Paid Tier/data-use requirement is resolved; (b) the exact panel and final configuration are frozen; and (c) the final runner dry run passes on non-benchmark dummy inputs.
+M0–M3 and the private Test/question-only checksum step are complete. All eight access probes pass. The exact panel and `configs/main_study_config_v1.0.json` were frozen, and the final non-Test dry run passed with schedule hash `2278113054669e6ec639e81d5384ab4ac40ba0e40e0da7742bb277eff9ed32b7`. Gate M4 is complete.

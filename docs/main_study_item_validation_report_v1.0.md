@@ -1,6 +1,6 @@
 # Main-study item validation report v1.0
 
-Status: **M3 complete; private Test content frozen; full M4 open**
+Status: **M3 complete; private Test content frozen. M4 was open at this report date and was subsequently completed on 2026-08-31.**
 Date: 2026-08-28
 
 ## Scope and independence

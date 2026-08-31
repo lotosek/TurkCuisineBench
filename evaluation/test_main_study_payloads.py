@@ -7,7 +7,9 @@ from run_main_study import make_request
 
 
 root = Path(__file__).resolve().parents[1]
-config = json.loads((root / "configs" / "main_study_config.example.json").read_text(encoding="utf-8"))
+config = json.loads((root / "configs" / "main_study_config_v1.0.json").read_text(encoding="utf-8"))
+assert config["manifest_version"] == "1.0-frozen"
+assert config["execution_authorized"] is False
 question = {"item_id": "FX001", "question_tr": "İki artı iki kaçtır?"}
 for env_name in {x["api_key_env"] for x in config["models"]}:
     os.environ[env_name] = "TEST-ONLY-NOT-A-REAL-KEY"

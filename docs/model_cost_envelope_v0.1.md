@@ -1,6 +1,6 @@
 # Main-study model cost envelope v0.1
 
-Status: **prices reverified; conservative ceiling registered; exact panel data-use tier still pending**
+Status: **prices reverified; conservative ceiling registered; exact panel and data-use tier frozen**
 
 Verified: 2026-08-31
 
@@ -37,6 +37,6 @@ The calculation is reproducible with:
 python evaluation/estimate_main_study_cost.py --cost-config configs/main_study_costs_2026-08-31.json
 ```
 
-Google AI Studio showed `No billing account` on 2026-08-31. Google's official pricing page states that Free Tier submissions may be used to improve its products, whereas Paid Tier submissions are not. Private Test questions must therefore not be sent to the current Gemini project. M4 can close only after Paid Tier is verified or a prospective panel amendment removes/replaces S05–S06.
+Google AI Studio showed Tier 1/Paid with a positive prepaid balance on 2026-08-31, and automatic reload was off. This resolved the Gemini data-use-tier requirement before Test execution. Personal billing identifiers, payment details, and balance evidence remain private.
 
 Prices must be checked again immediately before execution. Any increase that would exceed USD 5, any access-driven model replacement, or any data-use-tier change requires a dated protocol amendment before Test calls.
