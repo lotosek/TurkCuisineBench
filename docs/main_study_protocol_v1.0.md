@@ -1,6 +1,6 @@
 # TurkCuisineBench Main Study Protocol v1.0
 
-**Status:** Prospective protocol; no main-study model responses may be collected until Gates M0–M4 are complete.
+**Status:** Prospectively frozen before main-study responses; Gates M0–M5 completed on 2026-08-31.
 
 **Canonical language:** Turkish benchmark items and responses; English manuscript and repository documentation.
 **Primary purpose:** Evaluate model knowledge of Turkish cuisine under source-grounded, closed-book, provider-neutral conditions while preserving strict Dev/Test separation.
@@ -223,10 +223,10 @@ Implementation record (2026-08-28): both independent validators completed all 72
 
 ### Gate M5
 
-- [ ] Expected response count reconciled.
-- [ ] Technical failures classified without reference to correctness.
-- [ ] No Test key or accepted-answer field entered a request payload.
-- [ ] Raw logs and metadata checksummed.
+- [x] Expected response count reconciled.
+- [x] Technical failures classified without reference to correctness.
+- [x] No Test key or accepted-answer field entered a request payload.
+- [x] Raw logs and metadata checksummed.
 
 ## 10. Phase M6 — Automatic scoring and blinded manual review
 

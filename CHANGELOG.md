@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-31 — Main-study M5 execution completed
+
+- Captured all 576 prespecified model–item records in the frozen interleaved schedule, with 72 records for each of eight slots.
+- Reconciled 574 technically valid and two technically invalid responses, zero terminal request errors, zero model-ID drift, and three successful technical retries.
+- Kept raw response text, Test materials, request identifiers, and private checksums outside Git; added only a public-safe aggregate M5 report.
+- Estimated successful-request list-price cost at USD 0.128569, well below the registered USD 5 ceiling.
+
 ## 2026-08-31 — Gate M4 completed prospectively
 
 - Verified Gemini Tier 1/Paid status with a positive prepaid balance and automatic reload disabled; retained personal billing evidence outside Git.
