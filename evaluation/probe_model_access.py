@@ -24,10 +24,18 @@ def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def select_models(config: dict[str, Any], providers: set[str]) -> list[dict[str, Any]]:
-    models = [model for model in config["models"] if model["provider"] in providers]
+def select_models(
+    config: dict[str, Any], providers: set[str], slots: set[str] | None = None
+) -> list[dict[str, Any]]:
+    models = [
+        model
+        for model in config["models"]
+        if model["provider"] in providers and (slots is None or model["slot"] in slots)
+    ]
     if not models:
-        raise ValueError(f"No configured models match providers: {sorted(providers)}")
+        raise ValueError(
+            f"No configured models match providers={sorted(providers)} slots={sorted(slots) if slots else 'ALL'}"
+        )
     return sorted(models, key=lambda model: model["slot"])
 
 
@@ -51,6 +59,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True, type=Path)
     parser.add_argument("--providers", nargs="+", required=True, choices=["openai", "anthropic", "google", "groq"])
+    parser.add_argument("--slots", nargs="+")
+    parser.add_argument("--timeout-seconds", type=int, default=60)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--authorize-network-probe", action="store_true")
     args = parser.parse_args()
@@ -59,7 +69,9 @@ def main() -> None:
         raise RuntimeError("Neutral network probe not authorized; pass --authorize-network-probe explicitly")
 
     config = json.loads(args.config.read_text(encoding="utf-8"))
-    models = select_models(config, set(args.providers))
+    if args.timeout_seconds < 1 or args.timeout_seconds > 180:
+        raise ValueError("--timeout-seconds must be between 1 and 180")
+    models = select_models(config, set(args.providers), set(args.slots) if args.slots else None)
     missing = sorted({model["api_key_env"] for model in models if not os.environ.get(model["api_key_env"])})
     if missing:
         raise RuntimeError(f"Missing required environment variables: {', '.join(missing)}")
@@ -67,7 +79,7 @@ def main() -> None:
     records = []
     for model in models:
         url, headers, body = make_request(config, model, PROBE_QUESTION)
-        payload, response_headers = post_json(url, headers, body)
+        payload, response_headers = post_json(url, headers, body, timeout=args.timeout_seconds)
         records.append(sanitized_record(model, payload, response_headers))
 
     result = {"probe_text": PROBE_QUESTION["question_tr"], "records": records}

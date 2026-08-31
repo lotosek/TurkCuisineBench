@@ -1,8 +1,8 @@
 # Main-study model cost envelope v0.1
 
-Status: **prices verified; conservative ceiling registered; exact panel access still pending**
+Status: **prices reverified; conservative ceiling registered; exact panel data-use tier still pending**
 
-Verified: 2026-08-28
+Verified: 2026-08-31
 
 ## Price record
 
@@ -10,9 +10,9 @@ Verified: 2026-08-28
 |---|---|---:|---:|
 | S01 | `gpt-5.5-2026-04-23` | 5.00 / 30.00 | 5.00 / 30.00 |
 | S02 | `gpt-5.4-mini-2026-03-17` | 0.75 / 4.50 | 0.75 / 4.50 |
-| S03 | `claude-sonnet-5` | 2.00 / 10.00 promotional rate through 2026-08-31 | 3.00 / 15.00 post-promotion rate |
+| S03 | `claude-sonnet-5` | 2.00 / 10.00 | 3.00 / 15.00 conservative stress rate |
 | S04 | `claude-haiku-4-5-20251001` | 1.00 / 5.00 | 1.00 / 5.00 |
-| S05 | `gemini-3.6-flash` | 0.75 / 3.75 promotional rate through 2026-12-31 | 1.50 / 7.50 post-promotion rate |
+| S05 | `gemini-3.6-flash` | 0.75 / 3.75 through 2026-12-31 | 1.50 / 7.50 from 2027-01-01 |
 | S06 | `gemini-3.5-flash-lite` | 0.30 / 2.50 | 0.30 / 2.50 |
 | S07 | `openai/gpt-oss-120b` | 0.15 / 0.60 | 0.15 / 0.60 |
 | S08 | `qwen/qwen3.6-27b` | 0.60 / 3.00 | 0.60 / 3.00 |
@@ -34,7 +34,9 @@ Under current promotional prices, the all-attempt maximum is USD 2.807654. Under
 The calculation is reproducible with:
 
 ```text
-python evaluation/estimate_main_study_cost.py --cost-config configs/main_study_costs_2026-08-28.json
+python evaluation/estimate_main_study_cost.py --cost-config configs/main_study_costs_2026-08-31.json
 ```
 
-Prices must be checked again immediately before execution. Any increase that would exceed USD 5, or any access-driven model replacement, requires a dated protocol amendment before Test calls.
+Google AI Studio showed `No billing account` on 2026-08-31. Google's official pricing page states that Free Tier submissions may be used to improve its products, whereas Paid Tier submissions are not. Private Test questions must therefore not be sent to the current Gemini project. M4 can close only after Paid Tier is verified or a prospective panel amendment removes/replaces S05–S06.
+
+Prices must be checked again immediately before execution. Any increase that would exceed USD 5, any access-driven model replacement, or any data-use-tier change requires a dated protocol amendment before Test calls.

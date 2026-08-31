@@ -12,6 +12,7 @@ config = {
 assert PROBE_QUESTION == {"item_id": "ACCESS_PROBE", "question_tr": "Return exactly OK."}
 selected = select_models(config, {"google", "anthropic"})
 assert [model["slot"] for model in selected] == ["S01", "S02"]
+assert [model["slot"] for model in select_models(config, {"google"}, {"S02"})] == ["S02"]
 
 anthropic_payload = {
     "id": "msg_test",

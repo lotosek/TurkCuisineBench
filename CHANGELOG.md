@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-31 — Eight-slot access verified; Gemini data-use gate retained
+
+- Passed neutral `Return exactly OK.` access probes for Claude Sonnet 5, Claude Haiku 4.5, Gemini 3.6 Flash, and Gemini 3.5 Flash-Lite without sending benchmark content; all requested and returned model IDs matched.
+- Added slot-selective, bounded-time access probes after Gemini 3.6 Flash exceeded the initial 30-second observation window.
+- Reverified official list prices and retained the conservative USD 5 ceiling.
+- Kept M4 open because the Gemini project has no billing account and Free Tier submissions have different documented data-use treatment from Paid Tier submissions.
+
 ## 2026-08-28 — M0 governance state finalized before Test execution
 
 - Marked M0 governance complete and retained the private/public data boundary.

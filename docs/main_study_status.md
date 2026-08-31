@@ -1,6 +1,6 @@
 # Main-study status
 
-Last updated: 2026-08-28
+Last updated: 2026-08-31
 
 ## Current gate
 
@@ -10,13 +10,13 @@ M3 is **complete**. Two independent validators reviewed all 72 items against the
 
 The private 72-item Test content, question-only execution file, and private scoring key were frozen and checksummed on 2026-08-28. This closes the **Test-content component of M4 only**. No question, gold answer, reviewer rationale, adjudication record, or checksum is stored in Git, and no main-study Test request has been sent to any model.
 
-The provisional M4 panel contains eight slots across OpenAI, Anthropic, Google, and Groq. Non-benchmark access probes passed for the two OpenAI and two Groq slots. Anthropic and Google remain unprobed because credentials are absent; the panel is therefore not frozen.
+The provisional M4 panel contains eight slots across OpenAI, Anthropic, Google, and Groq. Neutral non-benchmark access probes passed for all eight slots and every provider returned the requested model ID. Google AI Studio currently shows `No billing account`; because Free Tier and Paid Tier have different documented data-use treatment, the private Test cannot be sent to Gemini until Paid Tier is verified or the panel is prospectively amended. The panel is therefore not frozen.
 
-The main-study runner has passed an offline dummy dry-run and a negative authorization test: with `execution_authorized=false`, it refuses network execution before loading any provider request. This is preparation evidence only and does not close M4. Full M4 remains open until the exact panel, remaining access probes, current cost ceiling, final prompt/configuration, and final non-Test fixture dry run are frozen together.
+The main-study runner has passed an offline dummy dry-run and a negative authorization test: with `execution_authorized=false`, it refuses network execution before loading any provider request. This is preparation evidence only and does not close M4. Full M4 remains open until the Gemini data-use gate is resolved and the exact panel, current cost ceiling, final prompt/configuration, and final non-Test fixture dry run are frozen together.
 
 The non-provider-dependent M4 methods components are now prospectively frozen: Statistical Analysis Plan v1.0, the deterministic 25% blinded review-overlap selector, and seed `20260828`. The selector uses a separate private blinding salt, so its public seed does not reveal model identities. A three-item synthetic dry run passed without network access; it must be repeated after the exact provider panel and final configuration are frozen. Checksums and the remaining blockers are recorded in [`m4_methods_manifest_v0.1.md`](m4_methods_manifest_v0.1.md).
 
-All eight requested model IDs and public list prices were rechecked against official provider documentation on 2026-08-28. A deliberately conservative three-attempt, full-token-use envelope plus 50% contingency produces a registered USD 5 run ceiling. Anthropic and Google access remains unprobed, so this price record does not freeze the panel or authorize execution. Details are in [`model_cost_envelope_v0.1.md`](model_cost_envelope_v0.1.md).
+All eight requested model IDs and public list prices were rechecked against official provider documentation on 2026-08-31. A deliberately conservative three-attempt, full-token-use envelope plus 50% contingency produces a registered USD 5 run ceiling. Technical access now passes for all eight slots, but the Gemini data-use tier still prevents panel freeze and Test execution. Details are in [`model_cost_envelope_v0.1.md`](model_cost_envelope_v0.1.md).
 
 ## Open controls
 
@@ -28,10 +28,9 @@ All eight requested model IDs and public list prices were rechecked against offi
 
 ## Next authorized work
 
-1. Obtain Anthropic and Gemini access and run only neutral, non-Test access probes.
-2. Complete the remaining provider access probes, recheck prices immediately before execution, and then freeze the exact equal-treatment panel; the provisional USD 5 cost ceiling is already registered.
-3. Freeze the final prompt/configuration; the overlap seed/script and Statistical Analysis Plan v1.0 are already prospectively frozen.
-4. Run the final dry run on synthetic/non-Test fixtures only and record the M4 authorization decision.
-5. Do not call model endpoints with Test questions until Gate M4 passes.
+1. Resolve the Gemini Paid Tier/data-use requirement or prospectively amend the panel.
+2. Freeze the exact equal-treatment panel and final prompt/configuration; the overlap seed/script, Statistical Analysis Plan v1.0, and USD 5 cost ceiling are already prospectively frozen.
+3. Run the final dry run on synthetic/non-Test fixtures only and record the M4 authorization decision.
+4. Do not call model endpoints with Test questions until Gate M4 passes.
 
 Aggregate candidate-stage QA is recorded in [`main_study_candidate_audit_v0.1.md`](main_study_candidate_audit_v0.1.md), and the completed public-safe M3 outcome is recorded in [`main_study_item_validation_report_v1.0.md`](main_study_item_validation_report_v1.0.md). The provisional provider-neutral panel is recorded in [`model_panel_manifest_v0.1.md`](model_panel_manifest_v0.1.md).

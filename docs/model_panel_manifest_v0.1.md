@@ -1,7 +1,7 @@
 # TurkCuisineBench Main-Study Model and Prompt Manifest v0.1
 
 Status: **PROVISIONAL — configuration prepared, but Gate M4 is not passed.**  
-Prepared: 2026-08-28 (Europe/Istanbul)  
+Prepared: 2026-08-28; access updated 2026-08-31 (Europe/Istanbul)
 Execution prohibition: M0–M3 and the private Test-content freeze are complete, but no Test item may be sent to any model until all remaining M4 conditions pass and all eight slots pass a non-Test access probe.
 
 ## 1. Provider-neutral selection rule
@@ -10,14 +10,14 @@ The panel is selected by prespecified structural criteria rather than by expecte
 
 ## 2. Provisional eight-model panel
 
-| Slot | Inference provider | Model developer/family | Exact requested model ID | Tier | Open-weight | Access probe on 2026-08-28 | M4 state |
+| Slot | Inference provider | Model developer/family | Exact requested model ID | Tier | Open-weight | Access-probe result | M4 state |
 |---|---|---|---|---|---:|---|---|
 | S01 | OpenAI API | OpenAI GPT | `gpt-5.5-2026-04-23` | frontier | no | PASS; returned requested ID and `OK` | ready; panel freeze pending |
 | S02 | OpenAI API | OpenAI GPT | `gpt-5.4-mini-2026-03-17` | efficient | no | PASS; returned requested ID and `OK` | ready; panel freeze pending |
-| S03 | Anthropic Claude API | Anthropic Claude | `claude-sonnet-5` | frontier/standard | no | not run; credential absent | BLOCKED: access required |
-| S04 | Anthropic Claude API | Anthropic Claude | `claude-haiku-4-5-20251001` | efficient | no | not run; credential absent | BLOCKED: access required |
-| S05 | Google Gemini API | Google Gemini | `gemini-3.6-flash` | high capability/throughput | no | not run; credential absent | BLOCKED: access required |
-| S06 | Google Gemini API | Google Gemini | `gemini-3.5-flash-lite` | efficient | no | not run; credential absent | BLOCKED: access required |
+| S03 | Anthropic Claude API | Anthropic Claude | `claude-sonnet-5` | frontier/standard | no | PASS 2026-08-28; returned requested ID and `OK` | ready; panel freeze pending |
+| S04 | Anthropic Claude API | Anthropic Claude | `claude-haiku-4-5-20251001` | efficient | no | PASS 2026-08-28; returned requested ID and `OK` | ready; panel freeze pending |
+| S05 | Google Gemini API | Google Gemini | `gemini-3.6-flash` | high capability/throughput | no | PASS 2026-08-31; returned requested ID and `OK` | BLOCKED: Paid Tier/data-use status required |
+| S06 | Google Gemini API | Google Gemini | `gemini-3.5-flash-lite` | efficient | no | PASS 2026-08-31; returned requested ID and `OK` | BLOCKED: Paid Tier/data-use status required |
 | S07 | GroqCloud | OpenAI GPT-OSS | `openai/gpt-oss-120b` | large open-weight | yes | PASS with minimum supported reasoning effort (`low`) and 128-token completion budget | ready; panel freeze pending |
 | S08 | GroqCloud | Alibaba Qwen | `qwen/qwen3.6-27b` | mid-size open-weight | yes | PASS with reasoning disabled and returned `OK` | ready; panel freeze pending |
 
@@ -62,13 +62,15 @@ The execution file contains only `item_id` and `question_tr`. Gold answers, acce
 
 ## 7. Verification record and current blockers
 
-The OpenAI and Groq model lists were also checked through their authenticated model-list endpoints without exposing credentials. OpenAI and Groq probes used only the neutral string `Return exactly OK.` and no benchmark content. Anthropic and Google remain unprobed because credentials are absent. On 2026-08-28, all eight requested IDs and their public list prices were rechecked on official documentation. The conservative, reproducible USD 5 run ceiling is recorded in [`model_cost_envelope_v0.1.md`](model_cost_envelope_v0.1.md). Prices and availability must still be checked immediately before execution because they can change.
+The OpenAI, Groq, and Google model lists were checked through authenticated model-list endpoints without exposing credentials. All eight access probes used only the neutral string `Return exactly OK.` and no benchmark content. On 2026-08-31, all eight requested IDs and their public list prices were rechecked on official documentation. The conservative, reproducible USD 5 run ceiling is recorded in [`model_cost_envelope_v0.1.md`](model_cost_envelope_v0.1.md). Prices and availability must still be checked immediately before execution because they can change.
 
-Official references checked on 2026-08-28:
+Google AI Studio showed `No billing account` on 2026-08-31. Because Google documents different data-use treatment for Free Tier and Paid Tier, technical access alone does not authorize private Test execution for S05–S06. Paid Tier must be verified or the panel must be prospectively amended before M4 closes.
+
+Official references checked on 2026-08-31:
 
 - OpenAI API model availability and pricing: https://platform.openai.com/docs/models and https://openai.com/api/pricing/
 - Anthropic model IDs/versioning and pricing: https://platform.claude.com/docs/en/about-claude/models/overview and https://platform.claude.com/docs/en/about-claude/pricing
 - Google Gemini model IDs and pricing: https://ai.google.dev/gemini-api/docs/models and https://ai.google.dev/gemini-api/docs/pricing
 - Groq production models and pricing: https://console.groq.com/docs/models
 
-M0–M3 and the private Test/question-only checksum step are complete. Gate M4 remains open until: (a) all eight access probes pass; (b) current availability, prices, and the cost ceiling are verified; (c) the exact panel, prompt/configuration, overlap procedure, and statistical analysis plan are frozen; and (d) the final runner dry run passes on non-benchmark dummy inputs.
+M0–M3 and the private Test/question-only checksum step are complete. All eight access probes pass. Gate M4 remains open until: (a) the Gemini Paid Tier/data-use requirement is resolved; (b) the exact panel and final configuration are frozen; and (c) the final runner dry run passes on non-benchmark dummy inputs.

@@ -39,7 +39,7 @@
       "api_key_env": "ANTHROPIC_API_KEY",
       "thinking": "disabled",
       "temperature": null,
-      "access_status": "credential_required"
+      "access_status": "probed"
     },
     {
       "slot": "S04",
@@ -49,7 +49,7 @@
       "api_key_env": "ANTHROPIC_API_KEY",
       "thinking": "disabled",
       "temperature": 0,
-      "access_status": "credential_required"
+      "access_status": "probed"
     },
     {
       "slot": "S05",
@@ -59,7 +59,7 @@
       "api_key_env": "GEMINI_API_KEY",
       "thinking_level": "minimal",
       "temperature": null,
-      "access_status": "credential_required"
+      "access_status": "probed"
     },
     {
       "slot": "S06",
@@ -69,7 +69,7 @@
       "api_key_env": "GEMINI_API_KEY",
       "thinking_level": "minimal",
       "temperature": null,
-      "access_status": "credential_required"
+      "access_status": "probed"
     },
     {
       "slot": "S07",
