@@ -257,9 +257,9 @@ Implementation record (2026-08-28): both independent validators completed all 72
 ### Gate M6
 
 - [ ] Every non-exact response has a complete lead-researcher code.
-- [ ] Every preselected overlap response has an independent second code.
+- [x] Every preselected overlap response has an independent second code.
 - [x] No reviewer sheet contains model/provider identity.
-- [ ] Pre-adjudication agreement tables are locked.
+- [x] Pre-adjudication agreement tables are locked.
 
 ## 11. Phase M7 — Reliability and adjudication
 
@@ -280,7 +280,7 @@ Implementation record (2026-08-28): both independent validators completed all 72
 
 ### Gate M7
 
-- [ ] Agreement statistics calculated from pre-adjudication overlap only.
+- [x] Agreement statistics calculated from pre-adjudication overlap only.
 - [ ] Every routed case resolved.
 - [ ] Consensus table locked and checksummed.
 - [ ] Model mapping remains sealed until consensus lock.

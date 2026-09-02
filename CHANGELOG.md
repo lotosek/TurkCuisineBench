@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-02 — Main-study overlap reliability locked
+
+- Verified two complete, identity-blinded 82-row independent overlap returns with identical opaque response sets and frozen evidence.
+- Locked pre-adjudication final-decision agreement at 80/82 (97.6%; Cohen's κ = .875).
+- Recorded perfect error-operation and semantic-target agreement among 72 jointly incorrect responses and descriptive 7/8 correct-variant agreement among eight jointly correct responses.
+- Routed three blinded disagreements to adjudication and transferred the 82 lead-perspective overlap codes into the private 326-row lead workbook, leaving 244 rows open.
+- Kept all Test content, reviewer workbooks, rationales, adjudication cases, mappings, and private checksums outside Git.
+
 ## 2026-08-31 — Main-study M6 reviewer materials prepared
 
 - Applied the frozen scorer to all 576 private responses without changing the accepted-answer inventory: 187 exact matches, 61 explicit abstentions, 326 manual-review candidates, and two technical invalids.
