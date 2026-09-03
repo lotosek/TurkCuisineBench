@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-09-03 — Main-study human coding, adjudication, and confirmatory statistical analysis locked
+
+- Completed official-source and taxonomy-grounded coding for the remaining 244 open rows of the 326-row lead researcher review workbook; verified `qc_status = COMPLETE` across all 326 rows with zero formula or formatting errors.
+- Adjudicated all three blinded overlap disagreements (two decision disagreements, one correct-variant disagreement: ADJ001, ADJ002, ADJ003) through PI-led adjudication while preserving both independent reviewer sheets unchanged.
+- Locked the final private consensus dataset across all 576 model–item evaluations (574 technically valid, 2 invalid; 230 semantic correct [40.1%], 187 exact correct [32.6%], 61 explicit abstentions [10.6%], 283 semantic incorrect [238 substitutions, 35 omissions, 10 additions]).
+- Executed the complete Statistical Analysis Plan v1.0 pipeline via automated, reproducible R scripts (`00` to `13_M8_reconciliation_and_reporting.R` and `run_all_analysis.R`) with zero execution errors (13/13 scripts PASS in 63.6s).
+- Confirmed the primary confirmatory hypothesis family (H1–H3) under Holm-Bonferroni correction:
+  - **H1 (Model differences)**: Supported; likelihood-ratio test $\chi^2(7) = 177.181$, raw $p = 7.67 \times 10^{-35}$, Holm $p = 2.30 \times 10^{-34}$; semantic accuracy differs significantly across model slots.
+  - **H2 (Lexical leakage effect L0 vs. L1)**: Not supported; model-adjusted probability difference $-0.061$, 95% CI $[-0.447, 0.326]$, $\chi^2(1) = 0.102$, Holm $p = 0.750$; observed negative direction is not statistically significant.
+  - **H3 (Semantic recovery effect)**: Supported; semantic review recovered 43 additional correct responses (+7.49 percentage points, paired item-bootstrap 95% CI $[4.36, 11.19]$), $\chi^2(1) = 119.95$, Holm $p = 1.30 \times 10^{-27}$.
+- Evaluated the opened H1 follow-up family of 28 pairwise model contrasts under a separate 28-test Holm family; 19 of 28 contrasts were statistically significant (common-valid denominators 70–72).
+- Applied prespecified design-matrix feasibility gates for secondary mixed models and model-by-domain interactions; recorded `NOT_FITTED` due to rank deficiency and sparse zero-cell separation without resorting to post-hoc category collapsing.
+- Verified H1 robustness via sensitivity analyses (invalid-as-incorrect $\chi^2(7) = 176.61, p = 1.01 \times 10^{-34}$; numeric-exclusion $\chi^2(7) = 180.93, p = 1.24 \times 10^{-35}$).
+- Generated standardized publication outputs (Tables 1–7, descriptive figures, analysis source hashes, session receipts, and a 17-item manuscript result fact register).
+- Maintained strict privacy boundaries: all Test items, gold answers, reviewer identities, response texts, and private checksums remain outside Git.
+
 ## 2026-09-02 — Main-study overlap reliability locked
 
 - Verified two complete, identity-blinded 82-row independent overlap returns with identical opaque response sets and frozen evidence.
@@ -113,5 +129,5 @@
 
 ### Pending
 
-- Freeze the exact main-study model panel, execution manifest, review overlap, and statistical analysis plan.
-- Execute, adjudicate, analyze, and release the main study under the versioned protocol.
+- Draft and finalize the full English manuscript text and supplementary material incorporating the locked M8 results.
+- Prepare the sanitized public benchmark release package and reproducibility artifacts under the versioned protocol.
