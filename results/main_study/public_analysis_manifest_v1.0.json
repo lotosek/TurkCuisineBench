@@ -1,0 +1,36 @@
+{
+  "manifest_version": "1.0-public",
+  "analysis_lock_date": "2026-09-03",
+  "public_package_update_date": "2026-09-10",
+  "gate_M8": "PASS",
+  "core_results": {
+    "expected_responses": 576,
+    "technically_valid_responses": 574,
+    "semantic_correct": 230,
+    "exact_correct": 187,
+    "correct_non_exact": 43,
+    "explicit_abstentions": 61,
+    "final_in": 283,
+    "pairwise_holm_rejections": 19,
+    "overlap_n": 82,
+    "overlap_agreements": 80,
+    "adjudication_cases": 3
+  },
+  "analytical_status": {
+    "H1": "SUPPORTED_AFTER_HOLM",
+    "H2": "NOT_SUPPORTED_AFTER_HOLM",
+    "H3": "SUPPORTED_AFTER_HOLM_WITH_MODEL_SCALE_WARNING",
+    "expanded_secondary_model": "NOT_FITTED_PRESPECIFIED_FEASIBILITY_GATE_FAILED",
+    "model_by_domain_interaction": "NOT_FITTED_PRESPECIFIED_CELL_SUPPORT_GATE_FAILED",
+    "source_cluster_audit": "POST_HOC_ROBUSTNESS"
+  },
+  "privacy": {
+    "aggregate_outputs_only": true,
+    "row_level_test_content_exported": false,
+    "raw_responses_exported": false,
+    "reviewer_identities_exported": false,
+    "private_rationales_exported": false,
+    "private_mapping_or_salt_exported": false,
+    "private_checksums_exported": false
+  }
+}

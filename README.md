@@ -1,66 +1,100 @@
 # TurkCuisineBench
 
-**Repository status:** Private development workspace; not a public benchmark release.
+**Repository status:** Public-safe research repository; active Test-v1 content
+is withheld.
 
-TurkCuisineBench is a source-grounded, Turkish-language short-answer benchmark for evaluating large language models on knowledge of Turkish cuisine, culinary techniques, local terminology, geographical-indication specifications, and food-related cultural heritage.
+TurkCuisineBench is a source-grounded Turkish short-answer benchmark for
+evaluating large language models on factual knowledge of Turkish cuisine,
+culinary techniques, local terminology, geographical-indication
+specifications, and food-related cultural heritage.
 
-The benchmark is designed around item-level provenance, conservative answer normalization, explicit ambiguity and leakage metadata, and human validation against official or institutional sources.
+## Current status
 
-## Current development status
+- The 36-item development set is frozen as `TurkCuisineBench-Dev v0.2` with
+  recorded SHA-256 checksums.
+- The two-model methods pilot is complete. Its purpose was pipeline and
+  taxonomy validation, not model ranking.
+- The independent 72-item Test-v1 benchmark was constructed from 38 official
+  or institutional URLs, validated, frozen, and evaluated with eight model
+  endpoints from four providers.
+- The main run produced 576 expected records: 574 technically valid responses
+  and two technical invalids. Human semantic review resolved all 326 valid
+  non-exact responses.
+- The locked final consensus contains 230 semantically correct responses,
+  including 43 correct non-exact responses; 283 incorrect responses; 61
+  explicit abstentions; and two technical invalids.
+- Pre-adjudication agreement on the independently selected 82-response overlap
+  was 80/82 (97.6%; Cohen's κ = .875). Three blinded discrepancies were
+  adjudicated only after the independent ratings were locked.
+- H1 (model-slot differences) and H3 (semantic recovery over exact match) were
+  supported after Holm correction; H2 (the L0/L1 lexical-cue contrast) was not
+  supported.
+- Gates M0–M8 are complete. The current public-safe status is documented in
+  [`docs/main_study_status.md`](docs/main_study_status.md).
 
-- The 36-item Dev set is frozen as `TurkCuisineBench-Dev v0.2` with recorded SHA-256 checksums.
-- Two independent reviewer forms have been archived outside Git and transcribed into the de-identified validation workbook.
-- Thirty-two items received complete, concordant acceptance. Four flagged cases (`D002`, `D021`, `D022`, and `D034`) were resolved using wording recommendations from a third independent adjudicator, transcribed by the lead researcher and checked against the official sources.
-- Adjudication changed question wording only; no gold answer or accepted-answer set was changed.
-- A provider-neutral 72-response methods pilot was completed under `pilot_run_v0.3`: 36 single-shot requests for `gpt-5.5-2026-04-23` through the OpenAI Responses API and 36 for `openai/gpt-oss-120b` through Groq's OpenAI-compatible API. All 72 requests completed without empty or truncated responses.
-- All 46 non-exact pilot responses received independent double coding. Pre-adjudication decision agreement was 93.5% (Cohen's κ = .801); operation coding among the 35 responses jointly coded incorrect was perfectly concordant (κ = 1.000). Five routed cases were resolved through third-review adjudication.
-- The final pilot consensus contains 21 exact accepted-answer matches and 9 manually verified correct responses, for 30/72 semantic accuracy (41.7%). These aggregate figures validate the pipeline and are not used as a model leaderboard.
-- The pilot error taxonomy is frozen as `Taxonomy v1.0` for prospective main-study coding.
-- The main Test benchmark is private and is not included in this repository. Its 72-item content was frozen after M3 validation on 2026-08-28; Gate M4 was completed prospectively on 2026-08-31 before Test execution. The current status is recorded in [`docs/main_study_status.md`](docs/main_study_status.md).
-- Two independent validators completed all 72 items. Eleven disagreements were resolved by lead-researcher adjudication, producing 61 unchanged items, 11 source-grounded revisions, and no exclusions. The locked 18-item primary agreement analysis remains distinct from the supplementary all-item comparison.
-- A public-safe aggregate validation report is available at [`docs/main_study_item_validation_report_v1.0.md`](docs/main_study_item_validation_report_v1.0.md). Private questions, keys, reviewer labels, rationales, adjudication records, and hashes remain outside Git.
-- The frozen eight-model M4 panel and provider-neutral prompt rules are documented in [`docs/model_panel_manifest_v0.1.md`](docs/model_panel_manifest_v0.1.md); the public configuration retains a false authorization lock.
-- Statistical Analysis Plan v1.0 and the deterministic, privately salted 25% response-review overlap selector were frozen before Test responses; their checksums and final non-Test dry-run record are in [`docs/m4_methods_manifest_v0.1.md`](docs/m4_methods_manifest_v0.1.md).
-- Official model IDs and prices were rechecked symmetrically across all four providers, all eight neutral access probes passed, Gemini Tier 1/Paid status was verified, and a conservative USD 5 execution ceiling was registered in [`docs/model_cost_envelope_v0.1.md`](docs/model_cost_envelope_v0.1.md).
-- Main-study M5 execution is complete: 576/576 unique records were captured, 574 were technically valid, two were technically invalid, and no returned model ID drifted. Public-safe reconciliation is in [`docs/m5_execution_report_v1.0.md`](docs/m5_execution_report_v1.0.md); all response text remains private.
-- Main-study M6 preparation is complete: the frozen scorer routed 187 exact matches, 61 explicit abstentions, 326 manual-review candidates, and two technical invalids. Private model-blinded workbooks contain all 326 lead-review rows and the prospectively selected 82-row independent overlap; the public-safe method record is in [`docs/m6_scoring_and_review_preparation_v1.0.md`](docs/m6_scoring_and_review_preparation_v1.0.md).
-- Both independent 82-row overlap returns are complete. Pre-adjudication final-decision agreement was 80/82 (97.6%; Cohen's κ = .875); error-operation and semantic-target coding were perfectly concordant among the 72 responses jointly coded incorrect. Three blinded cases require adjudication, and 244 non-overlap lead-review rows remain open. The public-safe record is in [`docs/m7_pre_adjudication_overlap_report_v1.0.md`](docs/m7_pre_adjudication_overlap_report_v1.0.md).
-- No model-level pilot ranking is released. Private reviewer returns, adjudication records, model-to-review mappings, and row-level consensus audit files remain outside Git.
-
-The frozen Dev set may be used to debug the prompt, response capture, normalization, abstention, and scoring pipeline. It must not be used for headline leaderboard claims. The main Test set will remain separate and private until its evaluation protocol is frozen.
+No model generated or adjudicated semantic-correctness or error-taxonomy
+labels. The active Test questions, answer key, raw responses, row-level human
+records, reviewer mappings, and private checksums remain outside Git.
 
 ## Repository structure
 
 ```text
-data/dev/                 Development items and fixed pilot requests
-data/test_private/        Placeholder only; private Test answers are excluded
-docs/                     Development protocol, dataset card, and release checklist
-evaluation/               Pilot runner, scorer, and normalization tests
-configs/                  Secret-free example model configuration
-paper/                    English manuscript outline and table plan
-workbooks/                Editable internal research workbooks
+analysis/main_study/       Public-safe main-study analysis modules
+configs/                   Secret-free model and execution configuration
+data/dev/                  Frozen Dev items and fixed pilot requests
+data/test_private/         Placeholder only; active Test content is excluded
+docs/                      Protocols, reports, dataset card, and release checks
+evaluation/                Execution, scoring, overlap-selection, and tests
+paper/                     Manuscript status and submission planning
+results/main_study/        Aggregate main-study tables and figure
+results/pilot/             Aggregate methods-pilot reporting
+workbooks/                 Development-stage workflow workbooks
 ```
 
-The ordered main-study workflow, decision gates, review design, and planned analysis are specified in [`docs/main_study_protocol_v1.0.md`](docs/main_study_protocol_v1.0.md).
+## Main-study results and reproducibility
+
+The public aggregate results are in
+[`results/main_study/`](results/main_study/). The directory includes model
+performance, the H1–H3 confirmatory table, all 28 gated pairwise comparisons,
+subgroup summaries, pre-adjudication reliability, the exploratory error
+taxonomy, feasibility-gate outcomes, and post-hoc source-cluster sensitivity
+results.
+
+The executed public-safe R modules and the post-hoc Python audit are in
+[`analysis/main_study/`](analysis/main_study/). They can be rerun only by an
+authorized reviewer who has a local copy of the locked private consensus file;
+the code never requires that file to be copied into this repository.
 
 ## Evaluation principle
 
-Each question is sent as a new stateless request. Tools, web browsing, retrieval, and conversational memory are disabled. Responses are preserved verbatim before Turkish-aware normalization.
+Each question is sent as a new stateless request. Tools, web browsing,
+retrieval, and conversational memory are disabled. Responses are preserved
+verbatim before Turkish-aware normalization.
 
-- `CO`: exact normalized match to a pre-registered accepted answer.
-- `NA`: explicit `Bilmiyorum` response.
-- `REVIEW`: all other responses, requiring manual resolution as `CO`, `IN`, or `NA` without post-hoc expansion of accepted answers.
+- `CO`: exact normalized match to a frozen accepted answer, or a human-verified
+  semantically correct non-exact response.
+- `IN`: source-incompatible content response.
+- `NA`: explicit `Bilmiyorum` response; valid but counted as not correct.
+- `TECHNICAL_INVALID`: request or completion failure kept separate from
+  semantic correctness.
+
+The frozen Dev set may be used to debug prompting, capture, normalization,
+abstention, scoring, and review workflows. It must not be used for headline
+leaderboard claims.
 
 ## Data and release policy
 
-This repository is private during development to reduce benchmark leakage and prevent premature distribution of unfrozen gold answers. Reviewer identities, signed forms, API credentials, and private Test answer keys must never be committed.
+This repository exposes only development material and aggregate main-study
+evidence permitted by the contamination and reviewer-provenance policy. Test-v1
+row-level material remains available only through controlled confidential
+access. A public Test release, if made, will be versioned separately after a
+successor active Test is deployed.
 
-At public release, the repository will provide code, versioned documentation, evaluation settings, and the permitted benchmark components. The dataset is expected to receive a separate Hugging Face Dataset Card and an archived release identifier.
+## Citation and license
 
-## Citation
+Citation metadata and the archival identifier will be finalized for the
+submission release. See `CITATION.cff.template`.
 
-Citation metadata will be finalized after the author list, manuscript title, release version, repository URL, and persistent identifier have been confirmed. See `CITATION.cff.template`.
-
-## License
-
-No public reuse license has yet been granted. See `LICENSES.md`.
+No public reuse license has yet been granted. The intended release model is MIT
+for author-created software and CC BY 4.0 for author-created public benchmark
+data/documentation, subject to final rights review. See `LICENSES.md`.

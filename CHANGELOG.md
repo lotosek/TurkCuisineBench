@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-09-10 — Supplementary workbook completed
+
+- Added Online Resource 1 with article metadata and six aggregate result sheets covering pairwise contrasts, subgroups, coverage, source-cluster robustness, and pre-adjudication reliability.
+- Checked workbook values against the published CSV tables and reviewed all sheet previews.
+- Verified all six evaluation test scripts and retained local build and QA files outside Git.
+
+## 2026-09-09 — Submission-candidate audit and public-safe main-study package
+
+- Audited the final 20-page English LRE submission candidate against the locked M8 outputs, including all headline counts, H1–H3 decisions, pairwise-family result, reliability estimates, feasibility gates, and sensitivity analyses.
+- Independently regenerated the post-hoc source-URL-clustered H1, H2, and H3 sensitivity estimates and the source-cluster bootstrap interval from the authorized locked consensus input.
+- Added the public-safe R analysis modules and a parameterized post-hoc Python audit while keeping the active Test-v1 row-level consensus and its private checksum outside Git.
+- Added aggregate main-study Tables 1–7, all 28 pairwise results, subgroup profiles, reliability and taxonomy aggregates, source-cluster sensitivity outputs, coverage summaries, and the publication figure.
+- Replaced the stale M6-open repository status with the completed M0–M8 record and updated the release and manuscript checklists.
+- Preserved the confidentiality boundary: no Test question, accepted answer, raw response, reviewer identity or mapping, row-level rationale, blinding material, or private checksum was committed.
+
 ## 2026-09-03 — Main-study human coding, adjudication, and confirmatory statistical analysis locked
 
 - Completed official-source and taxonomy-grounded coding for the remaining 244 open rows of the 326-row lead researcher review workbook; verified `qc_status = COMPLETE` across all 326 rows with zero formula or formatting errors.

@@ -1,0 +1,15 @@
+dimension,category,item_count,source_url_count,denominator,percentage,analysis_role
+coverage_scope,province_or_local,60,,72,83.3333333333,POST_HOC_DESCRIPTIVE
+coverage_scope,national,6,,72,8.3333333333,POST_HOC_DESCRIPTIVE
+coverage_scope,transnational,6,,72,8.3333333333,POST_HOC_DESCRIPTIVE
+geographic_region,Aegean,12,,60,20.0,POST_HOC_DESCRIPTIVE
+geographic_region,Central Anatolia,12,,60,20.0,POST_HOC_DESCRIPTIVE
+geographic_region,Black Sea,10,,60,16.6666666667,POST_HOC_DESCRIPTIVE
+geographic_region,Mediterranean,8,,60,13.3333333333,POST_HOC_DESCRIPTIVE
+geographic_region,Southeastern Anatolia,8,,60,13.3333333333,POST_HOC_DESCRIPTIVE
+geographic_region,Eastern Anatolia,7,,60,11.6666666667,POST_HOC_DESCRIPTIVE
+geographic_region,Marmara,3,,60,5.0,POST_HOC_DESCRIPTIVE
+source_family,TÜRKPATENT,39,24,72,54.1666666667,POST_HOC_DESCRIPTIVE
+source_family,Ministry Culture Portal,18,9,72,25.0,POST_HOC_DESCRIPTIVE
+source_family,UNESCO,15,5,72,20.8333333333,POST_HOC_DESCRIPTIVE
+source_url_distribution,unique source URLs,72,38,72,100.0,POST_HOC_DESCRIPTIVE

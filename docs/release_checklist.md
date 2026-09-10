@@ -13,9 +13,9 @@
 
 - [x] Dev version frozen and checksum recorded.
 - [x] Pilot response-error taxonomy frozen as `Taxonomy v1.0`.
-- [ ] Main Test version frozen and checksum recorded.
+- [x] Main Test version frozen and checksum recorded privately.
 - [x] Dev gold and accepted-answer files locked before pilot execution.
-- [ ] Public and hidden release components explicitly identified.
+- [x] Public and hidden release components explicitly identified.
 - [x] No API key, credential, personal form, or signature tracked by Git.
 
 ## Pilot and evaluation
@@ -26,17 +26,20 @@
 - [x] Every manual-review row resolved.
 - [x] Systematic prompt and scoring issues resolved before Test.
 - [x] Main-study sequence and decision gates versioned before Test construction.
-- [ ] Main evaluation includes diverse model families and exact version identifiers.
-- [ ] Raw responses, latency, errors, and settings retained where permitted.
+- [x] Main evaluation includes diverse model families and exact version identifiers.
+- [x] Raw responses, latency, errors, and settings retained privately where permitted.
 
 ## Manuscript and repository
 
-- [ ] English manuscript complete.
-- [ ] Related work addresses current Turkish and culinary benchmarks.
-- [ ] Data statement, ethics statement, and limitations included.
+- [x] English manuscript complete at submission-candidate stage.
+- [x] Related work addresses current Turkish and culinary benchmarks.
+- [x] Data statement, ethics statement, and limitations included.
 - [x] README and Dataset Card match the frozen Dev files.
-- [ ] Code runs from a clean environment.
+- [x] Locked analysis completed by one command; public-safe wrapper reverified against the authorized input.
 - [ ] Public license selected after rights review.
 - [ ] `CITATION.cff` finalized.
-- [ ] Public repository URL and release identifier added to the manuscript.
+- [x] Public repository URL added to the manuscript.
+- [ ] Exact submission commit or release identifier added to the manuscript.
+- [x] Online Resource 1 assembled and checked against the manuscript citations.
+- [ ] Confidential editor/reviewer audit package assembled and independently checked.
 - [ ] arXiv version linked to the dataset record after posting.

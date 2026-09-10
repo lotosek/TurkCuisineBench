@@ -23,11 +23,15 @@ data/test_private/*
 results/raw_private/
 results/pilot/pilot_v0.2_scored.csv
 results/pilot/pilot_run_v0.3_scored.csv
+analysis/main_study/student_outputs/
+analysis/main_study/posthoc_outputs/
+TurkCuisineBench_Main_Study_Final_Consensus_Private_v1.0.csv
 workbooks/*Reviewer*
 workbooks/*Reconciled*
 workbooks/*Consensus*
 workbooks/*Adjudicator*
 
 # Generated QA artifacts
+scratch/
 *.inspect.ndjson
 *_previews/

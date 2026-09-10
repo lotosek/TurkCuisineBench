@@ -1,100 +1,40 @@
-# Provisional manuscript outline
+# Manuscript status
 
-## Working title
+## Submission candidate
 
-**TurkCuisineBench: A Source-Grounded Benchmark for Evaluating Large Language Model Knowledge of Turkish Cuisine**
+**Title:** *TurkCuisineBench: A source-grounded short-answer benchmark for
+large language models' factual knowledge of Turkish cuisine and culinary heritage*
 
-## Target journal
+**Target journal:** *Language Resources and Evaluation*, full-length paper.
 
-Primary target: *Language Resources and Evaluation*.
+The English manuscript is complete at the submission-candidate stage. It is 20
+rendered pages, with a 196-word abstract, six keywords, decimal headings using
+no more than three levels, seven tables, one publication-resolution figure,
+Statements and Declarations, data/code availability statements, and 33 cited
+reference entries.
 
-## Abstract structure
+The manuscript reports the locked M8 results and the later, explicitly
+post-hoc source-dependence and coverage audit. The full DOCX is deliberately not
+tracked here so that author metadata and submission-specific files are managed
+separately from the public-safe research repository.
 
-1. Problem: culturally and linguistically grounded evaluation remains limited for specialized Turkish knowledge.
-2. Resource: a source-grounded Turkish short-answer benchmark covering culinary composition, techniques, geographical indications, terminology, and heritage.
-3. Method: official-source fact selection, item-level provenance, risk metadata, independent validation, conservative normalization, and abstention-aware scoring.
-4. Evaluation: diverse open and proprietary model families under fixed closed-book conditions.
-5. Findings: performance differences by knowledge domain, specificity, answer form, and risk class.
-6. Contribution: benchmark, evaluation toolkit, documentation, and limitations.
+## Items still required before journal upload
 
-## 1. Introduction
+1. Upload the completed Online Resource 1 alongside the manuscript. The workbook
+   is available in `results/main_study/` with article metadata and numbered tables.
+2. Assemble and QA the confidential editor/reviewer audit package referenced by
+   the data-availability statement.
+3. Recheck all official-source URLs immediately before submission.
+4. Replace the manuscript's repository-state reference with the exact commit or
+   archival tag used for submission.
+5. Finalize citation metadata and the release license after rights review.
 
-- Motivation for culturally grounded and domain-specific LLM evaluation.
-- Why Turkish cuisine is linguistically, technically, and culturally challenging.
-- Limitations of translated, multiple-choice, and weakly sourced benchmarks.
-- Research questions and contributions.
+## Frozen reporting boundaries
 
-## 2. Related work
-
-- Turkish-language LLM benchmarks.
-- Cultural-knowledge evaluation.
-- Culinary and food-related NLP benchmarks.
-- Dataset documentation and validation practices.
-- Short-answer scoring and benchmark contamination.
-
-## 3. Benchmark design
-
-- Scope and knowledge-domain taxonomy.
-- Official-source selection and source-fact registry.
-- Candidate generation, inclusion, revision, and exclusion.
-- L0/L1 specificity and lexical-leakage controls.
-- Gold and accepted-answer construction.
-- Temporal-stability and numeric-answer handling.
-
-## 4. Human validation
-
-- Reviewer recruitment and qualifications.
-- Independent review instructions.
-- Duplicate and risk-based review design.
-- Adjudication and audit trail.
-- Ethical and authorship considerations.
-
-Provisional reporting sentence: “Two independent reviewers assessed all 36 Dev items. Four flagged cases were resolved using independent adjudicator wording recommendations, transcribed by the lead researcher and verified against official sources before the v0.2 freeze.”
-
-Main-study reporting sentence: “Two independent validators assessed all 72 Test items against official sources. Pre-adjudication final-action agreement was 94.4% in the prospectively locked 18-item primary set and 86.7% in the 30-item risk sensitivity set; the 84.7% all-item comparison is supplementary. Eleven disagreements were resolved through lead-researcher adjudication before the private Test-content freeze.” Cohen's κ must be reported with the one-category marginal limitation rather than interpreted alone.
-
-## 5. Evaluation protocol
-
-- Dev/Test separation.
-- Pilot purpose and freeze gate.
-- Model selection and exact version reporting.
-- Turkish prompt and closed-book conditions.
-- Normalization, abstention, and manual-review routing.
-- Metrics and uncertainty reporting.
-- Prospectively frozen Statistical Analysis Plan v1.0, paired item-cluster bootstrap, multiplicity control, and invalid-response sensitivity analysis.
-
-## 6. Results
-
-- Overall performance with uncertainty.
-- Results by knowledge domain and specificity.
-- Local terminology and technical-knowledge errors.
-- Abstention and calibration behaviour.
-- Robustness and sensitivity analyses.
-
-## 7. Discussion
-
-- What model errors reveal about Turkish cultural and culinary knowledge.
-- Implications for culturally grounded benchmark design.
-- Source authority versus lived cultural variation.
-- Contamination and longitudinal maintenance.
-
-## 8. Limitations and ethics
-
-- Selective institutional-source coverage.
-- Regional variation and contested terminology.
-- Model access, version drift, cost, and reproducibility.
-- Responsible release of Test data and reviewer records.
-
-## 9. Conclusion
-
-- Summary of empirical and resource contributions.
-- Maintenance and future multilingual extension.
-
-## Planned main tables
-
-1. Comparison with existing Turkish and cultural benchmarks.
-2. Benchmark composition by knowledge domain, specificity, and answer type.
-3. Reviewer agreement and adjudication outcomes.
-4. Model-level results with confidence intervals.
-5. Performance by domain and risk class.
-6. Error taxonomy and representative de-identified examples.
+- H1–H3 are the only confirmatory family.
+- The 28 H1 pairwise comparisons form a separate gated Holm family.
+- Subgroup and taxonomy profiles are secondary or exploratory descriptive
+  results.
+- Source-cluster and coverage audits are post hoc.
+- Test-v1 questions, accepted answers, raw responses, reviewer mappings,
+  rationales, and private checksums remain outside Git.

@@ -1,0 +1,2 @@
+effect,estimate,ci_low,ci_high,bootstrap_repetitions,seed,resampling_unit,source_clusters,analysis_role
+semantic_minus_exact_probability,0.07491289198606271,0.0392156862745098,0.1153184874116376,10000,20260828,source_url,38,POST_HOC_ROBUSTNESS

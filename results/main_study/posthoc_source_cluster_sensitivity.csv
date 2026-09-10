@@ -1,0 +1,4 @@
+analysis,effect,wald_chi_square,df,p_value,cluster_unit,source_clusters,analysis_role,odds_ratio,ci_low,ci_high
+H1 model-slot global effect,C(model_slot),72.43546920461587,7.0,4.750387126395225e-13,source_url,38,POST_HOC_ROBUSTNESS,,,
+H2 L1 versus L0,C(lexical_leakage)[T.L1],,,0.8332376108328641,source_url,38,POST_HOC_ROBUSTNESS,1.1026547016409494,0.44399814339516874,2.7384064756522153
+H3 semantic versus exact,C(scoring_method)[T.semantic],,,6.648691862558328e-05,source_url,38,POST_HOC_ROBUSTNESS,1.4797296556391957,1.2205470461416323,1.7939495742501772

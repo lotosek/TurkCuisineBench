@@ -1,0 +1,3 @@
+component,status,reason,supporting_evidence,analysis_role
+Expanded secondary mixed model,NOT_FITTED_PRESPECIFIED_FEASIBILITY_GATE_FAILED,numeric_answer is exactly redundant with the numeric answer_form level; two frozen knowledge-specificity levels contain one item each and have complete outcome separation. No post-output category collapse was used.,Design rank 26/27; alias=numeric_answerTRUE; sparse specificity levels=3; completely separated levels=2,SECONDARY
+Exploratory model-by-domain interaction,NOT_FITTED_PRESPECIFIED_CELL_SUPPORT_GATE_FAILED,3 model-by-domain cells do not contain both outcomes.,3 of 48 model-by-domain cells lack both outcomes,EXPLORATORY

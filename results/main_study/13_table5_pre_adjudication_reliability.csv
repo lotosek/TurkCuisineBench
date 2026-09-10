@@ -1,0 +1,5 @@
+metric,n,agreements,observed_agreement,expected_agreement,cohens_kappa,interpretation,adjudication_cases,adjudication_role,independent_third_rating,locked_ratings_match_snapshot
+Final decision (CO/IN),82,80,0.975609756097561,0.8042831647828674,0.8753799392097262,Primary registered reliability,3,PI-led human adjudication,FALSE,TRUE
+Error operation among jointly IN,72,72,1,0.7145061728395062,1,Primary taxonomy reliability,3,PI-led human adjudication,FALSE,TRUE
+Semantic target among jointly IN,72,72,1,0.1570216049382716,1,Supplementary target reliability,3,PI-led human adjudication,FALSE,TRUE
+Correct variant among jointly CO,8,7,0.875,0.34375,0.8095238095238095,Descriptive; small jointly-correct N,3,PI-led human adjudication,FALSE,TRUE
