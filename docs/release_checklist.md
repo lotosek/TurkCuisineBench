@@ -45,7 +45,8 @@
 - [x] Revised manuscript render inspected on every page; the amended paragraph also rechecked after the final wording correction.
 - [x] H3 interpretation amendment documented without altering frozen scores or original Holm families.
 - [x] Confidential editor/reviewer audit package assembled; file hashes and independent-rating agreement recomputed by an automated verification routine (not a new human review).
-- [x] Manuscript revision 1.3 retains single-author wording and six keywords, including Turkish cuisine and culinary heritage.
+- [x] Manuscript revision 1.4 retains single-author wording and six keywords, including Turkish cuisine and culinary heritage.
+- [x] Main Tables 1–7 are explicitly cited in the text in numerical order; the private submission-package checksums were refreshed for revision 1.4.
 - [x] Concise AI-assistance disclosure retained in Methods, identifying assistance with literature, code/data processing, and drafting/editing while distinguishing final human review decisions.
 - [x] Cover letter and manuscript-aligned submission-field text prepared privately; author-experience paragraph used without asserting verification of the live ORCID profile.
 - [ ] Author confirms publication/submission history and approves submission-system declarations.

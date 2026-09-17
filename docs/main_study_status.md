@@ -101,7 +101,7 @@ accessible on 17 September 2026. `CITATION.cff` is complete; no DOI has been
 assigned. The revised rights decision grants MIT for public software and CC BY 4.0
 for covered public research material, with private and third-party exclusions.
 
-Manuscript revision 1.3 and its cover letter are prepared outside Git, together
+Manuscript revision 1.4 and its cover letter are prepared outside Git, together
 with manuscript-aligned submission-field text. The cover letter uses a relevant
 author-experience paragraph; completeness of the public ORCID profile is not
 asserted as verified. The concise Methods disclosure identifies AI-assisted

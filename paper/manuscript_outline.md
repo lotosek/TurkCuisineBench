@@ -7,7 +7,7 @@ large language models' factual knowledge of Turkish cuisine and culinary heritag
 
 **Target journal:** *Language Resources and Evaluation*, full-length paper.
 
-The English manuscript revision 1.3 has a 20-page checked Word-to-PDF render,
+The English manuscript revision 1.4 has a 20-page checked Word-to-PDF render,
 a 206-word abstract, six keywords, decimal headings using no more than three levels,
 seven tables, one 1200-dpi figure,
 Statements and Declarations, data/code availability statements, and 33 cited
@@ -27,7 +27,7 @@ separately from the public-safe research repository.
 2. Supply the completed confidential editor/reviewer audit package only through
    a journal channel that preserves confidentiality. Its integrity and locked
    independent-rating agreement were checked automatically on 17 September 2026.
-3. Use manuscript revision 1.3. Its exact research-materials snapshot is commit
+3. Use manuscript revision 1.4. Its exact research-materials snapshot is commit
    `82719f07b11b3e962dad368778ac3a146443e9e7`; later submission-documentation
    updates do not alter that archived research release.
 4. The cover letter is prepared, including the relevant-author-experience
