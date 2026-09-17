@@ -1,7 +1,7 @@
 # Main-study aggregate results
 
-These files are public-safe aggregates from the locked 72-item, eight-endpoint
-TurkCuisineBench Test-v1 evaluation. They contain no Test question, accepted
+These files contain public-safe aggregates from the locked 72-item, eight-endpoint
+TurkCuisineBench Test-v1 evaluation and four already-public Dev examples. They contain no Test question, Test accepted
 answer, raw model response, row-level reviewer decision or rationale, reviewer
 mapping, blinding material, or private checksum.
 

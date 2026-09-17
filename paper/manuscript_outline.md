@@ -1,6 +1,6 @@
 # Manuscript status
 
-## Submission candidate
+## Submitted manuscript
 
 **Title:** *TurkCuisineBench: A source-grounded short-answer benchmark for
 large language models' factual knowledge of Turkish cuisine and culinary heritage*
@@ -20,26 +20,29 @@ post-hoc source-dependence and coverage audit. The full DOCX is deliberately not
 tracked here so that author metadata and submission-specific files are managed
 separately from the public-safe research repository.
 
-## Items still required before journal upload
+## Submission record and remaining checks
 
-1. Upload the completed Online Resource 1 alongside the manuscript. The workbook
-   is available in `results/main_study/` with article metadata and numbered tables.
-2. Supply the completed confidential editor/reviewer audit package only through
-   a journal channel that preserves confidentiality. Its integrity and locked
+1. The author reported submitting revision 1.4 to *Language Resources and
+   Evaluation* on 17 September 2026. The review screen listed `ESM_1.xlsx` as
+   supplementary material and `Fig1.tiff` as the figure.
+2. The confidential editor/reviewer audit package was listed under non-public
+   related files, not public supplementary material. Its integrity and locked
    independent-rating agreement were checked automatically on 17 September 2026.
-3. Use manuscript revision 1.4. Its exact research-materials snapshot is commit
+3. The manuscript's exact research-materials snapshot is commit
    `82719f07b11b3e962dad368778ac3a146443e9e7`; later submission-documentation
    updates do not alter that archived research release.
-4. The cover letter is prepared, including the relevant-author-experience
+4. The cover letter was prepared, including the relevant-author-experience
    paragraph permitted by the journal. Submission-field text is prepared from
-   the manuscript. The author must confirm publication/submission history and
-   approve declarations in the submission interface. No interface submission
-   is implied, and an updated public ORCID profile is not asserted as verified.
+   the manuscript. Final receipt archiving and confirmation of the files actually
+   received by the journal remain private administrative checks. An updated
+   public ORCID profile is not asserted as verified.
 
 All 38 source URLs passed the 17 September accessibility check. Citation metadata
 is complete. The author authorized MIT for public software and CC BY 4.0 for
 covered public research material, with exclusions in `LICENSES.md`. No DOI has been
-assigned and no journal submission has been made by this preparation workflow.
+verified for the manuscript or an independently archived repository release.
+Research Square acknowledged the author's In Review opt-in. Public posting,
+external peer-review completion, and journal acceptance are not yet confirmed.
 
 ## Frozen reporting boundaries
 

@@ -92,7 +92,7 @@ model-to-blind mappings, blinding salt, and private checksums remain outside
 Git. Authorized editorial audit can use the locked confidential files without
 changing the public-release boundary.
 
-## Remaining submission and release work
+## Submission and remaining release work
 
 The confidential editorial audit package has been assembled outside Git and
 verified by file hashes and recalculation of locked-rating agreement. Online
@@ -101,18 +101,22 @@ accessible on 17 September 2026. `CITATION.cff` is complete; no DOI has been
 assigned. The revised rights decision grants MIT for public software and CC BY 4.0
 for covered public research material, with private and third-party exclusions.
 
-Manuscript revision 1.4 and its cover letter are prepared outside Git, together
+Manuscript revision 1.4 and its cover letter were prepared outside Git, together
 with manuscript-aligned submission-field text. The cover letter uses a relevant
 author-experience paragraph; completeness of the public ORCID profile is not
 asserted as verified. The concise Methods disclosure identifies AI-assisted
 research and writing support while retaining responsibility for final human
 review decisions. Frozen data and statistical results are unchanged.
 
-For submission, use the updated manuscript citing research-materials snapshot
-`82719f07b11b3e962dad368778ac3a146443e9e7`,
-upload Online Resource 1 as the public supplement, and supply the confidential
-audit package only through a channel that preserves editorial confidentiality.
-Author confirmation of publication/submission history and approval of the
-submission-system declarations remain necessary. No journal submission has
-been made by this preparation workflow. Test-v1 remains private until a
-separately documented release decision.
+The author reported completing journal submission on 17 September 2026. The
+submitted manuscript cites research-materials snapshot
+`82719f07b11b3e962dad368778ac3a146443e9e7`. The submission review screen listed
+`ESM_1.xlsx` as the public supplementary file and the confidential audit archive
+under non-public related files. Submission correspondence remains outside Git.
+
+The author also opted into Research Square In Review, and an opt-in
+acknowledgement was received. This is not evidence of journal acceptance,
+completed external peer review, or public preprint posting. A public manuscript
+DOI and an independently archived repository DOI have not been verified here.
+The confidential audit archive is not authorized for public redistribution;
+Test-v1 remains private until a separately documented release decision.

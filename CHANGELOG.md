@@ -1,7 +1,26 @@
 # Changelog
 
+## 2026-09-17 — Post-submission repository audit
+
+- Updated the current status after the author's journal submission and In Review opt-in. Preprint posting, a public manuscript DOI, journal acceptance, and external peer-review completion are not asserted.
+- Added an authoritative documentation index and marked development-stage reports and workbooks as historical records rather than current instructions.
+- Made the later scoped MIT/CC BY 4.0 decision and the H3 interpretation amendment explicit beside the superseded entries below. Original numerical exports, frozen data, and prospective analysis-plan checksums remain unchanged.
+- Reconciled public model counts and error profiles with the locked consensus, the current supplementary workbook with its source CSVs, and both Dev CSV/XLSX versions. All 353 checks passed; the public supplement matches the prepared submission copy byte-for-byte.
+- Verified six listed release checksums and twelve M4 code/configuration/plan checksums. The six existing offline evaluation tests passed and all thirteen public R scripts parsed. A fresh end-to-end R run could not proceed in the audit environment because `readr` was unavailable; no fresh model-fit replication is claimed.
+- Documented cached hyperlink errors in three historical pilot execution workbooks without rewriting frozen files or their hashes. No cached cell errors were found in the current Dev workbook or current public supplement.
+- Strengthened ignore rules for future private outputs and added a repeatable public-release consistency test. No Test rows, confidential submission files, correspondence, or private checksums are included in this update.
+
+## 2026-09-17 — Submission revisions 1.1, 1.3, and 1.4
+
+- Revision 1.1 adopted MIT for covered software and CC BY 4.0 for covered public research material, replacing the earlier rights-reserved decision for those components only; see [LICENSES.md](LICENSES.md).
+- Recorded the post-analysis H3 interpretation amendment, precise H2 estimand, and source-dependence limitations without changing frozen scores or either Holm family.
+- Added the current `ESM_1.xlsx`, model-level error summaries, public Dev examples, and revised reporting manifest; the earlier supplement remains historical.
+- Revision 1.3 finalized single-author wording, culinary keywords, concise AI-assistance disclosure, and private submission documentation. Revision 1.4 corrected in-text table references.
+- The manuscript cites research-materials snapshot `82719f07b11b3e962dad368778ac3a146443e9e7`; later documentation commits do not replace that snapshot.
+
 ## 2026-09-17 — Submission materials and rights decision
 
+- **Historical checkpoint:** the rights decision below was superseded later the same day by submission revision 1.1 and the scoped grants in `LICENSES.md`.
 - Completed citation metadata without inventing a DOI or publication record.
 - Recorded the author's decision to retain rights without a public reuse license; superseded the earlier intended MIT/CC BY release statement.
 - Rechecked all 38 frozen source URLs successfully and published only the aggregate access-check result.
@@ -25,6 +44,7 @@
 
 ## 2026-09-03 — Main-study human coding, adjudication, and confirmatory statistical analysis locked
 
+- **Historical analysis checkpoint:** the original H3 decision below is retained as provenance, not the current interpretation. The [17 September amendment](docs/interpretation_amendment_2026-09-17.md) withholds an unqualified H3 confirmatory decision because of the extreme model scale.
 - Completed official-source and taxonomy-grounded coding for the remaining 244 open rows of the 326-row lead researcher review workbook; verified `qc_status = COMPLETE` across all 326 rows with zero formula or formatting errors.
 - Adjudicated all three blinded overlap disagreements (two decision disagreements, one correct-variant disagreement: ADJ001, ADJ002, ADJ003) through PI-led adjudication while preserving both independent reviewer sheets unchanged.
 - Locked the final private consensus dataset across all 576 model–item evaluations (574 technically valid, 2 invalid; 230 semantic correct [40.1%], 187 exact correct [32.6%], 61 explicit abstentions [10.6%], 283 semantic incorrect [238 substitutions, 35 omissions, 10 additions]).
@@ -126,7 +146,11 @@
 - Excluded the earlier 256-token technical run and one diagnostic request from scientific results; the full two-model panel was rerun rather than selectively rerunning one endpoint.
 - Produced a de-identified scored table with automatic labels and blank fields for shared manual review. No model ranking is reported from the pilot.
 
-## Unreleased
+## Initial development-stage records
+
+These entries describe earlier preparation stages. They are retained for
+provenance and are not a current release checklist. See
+[current status](docs/main_study_status.md) and [release checklist](docs/release_checklist.md).
 
 ### Frozen Dev v0.2
 
@@ -150,7 +174,7 @@
 - Private archival record and SHA-256 checksums for both original reviewer workbooks; the originals remain outside Git.
 - De-identified independent adjudicator pack limited to the four unresolved Dev cases.
 
-### Pending
+### Tasks listed as pending at that checkpoint
 
-- Draft and finalize the full English manuscript text and supplementary material incorporating the locked M8 results.
-- Prepare the sanitized public benchmark release package and reproducibility artifacts under the versioned protocol.
+- Manuscript and supplementary preparation was subsequently completed in submission revisions 1.1–1.4.
+- Public Dev materials, analysis code, and aggregate main-study results are now available. A public active-Test release and an independently archived DOI release have not been confirmed.

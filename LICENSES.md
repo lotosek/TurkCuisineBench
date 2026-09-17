@@ -28,16 +28,22 @@ over facts, names or other public-domain elements.
 
 ## Exclusions
 
-- Active Test questions, answer inventories, raw responses, reviewer workbooks,
+- Active Test questions, answer inventories, raw responses, Test reviewer workbooks,
   identity/blinding mappings and private rationales are not publicly released
   or licensed by this notice.
 - Manuscript drafts and submission correspondence, `paper/`, `workbooks/`, and
   third-party attachments under `docs/attachments/` are excluded unless an
   individual file expressly states otherwise.
+
 - Source documents, quotations, third-party figures and other third-party
   material retain their original rights, including within covered files.
   Source links confer no redistribution permission for those works.
 - Third-party software notices govern their respective components.
+
+Some de-identified development-stage workbooks are publicly visible in
+`workbooks/` as historical records. They are not active Test reviewer files and
+remain outside the public license grants above. Public visibility alone does
+not grant a reuse license for these excluded files.
 
 The confidential editorial package is not a public supplement. Its private
 components require controlled access and may not be redistributed under this

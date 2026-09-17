@@ -35,3 +35,16 @@ workbooks/*Adjudicator*
 scratch/
 *.inspect.ndjson
 *_previews/
+
+# Private analysis and submission outputs, wherever generated
+.Rhistory
+.RData
+*.rds
+student_outputs/
+posthoc_outputs/
+private/
+outputs/
+*Confidential*
+*Private*
+*Reviewer*completed*
+*adjudicated*

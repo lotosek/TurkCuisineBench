@@ -49,8 +49,11 @@
 - [x] Main Tables 1–7 are explicitly cited in the text in numerical order; the private submission-package checksums were refreshed for revision 1.4.
 - [x] Concise AI-assistance disclosure retained in Methods, identifying assistance with literature, code/data processing, and drafting/editing while distinguishing final human review decisions.
 - [x] Cover letter and manuscript-aligned submission-field text prepared privately; author-experience paragraph used without asserting verification of the live ORCID profile.
-- [ ] Author confirms publication/submission history and approves submission-system declarations.
-- [ ] Journal submission completed and receipt archived. Preparation alone does not satisfy this item.
-- [ ] arXiv version linked to the dataset record after posting.
+- [x] Author reports completing the journal submission and approving the submission-system declarations on 17 September 2026. These are author declarations, not independently verified publication-history claims.
+- [x] Research Square In Review opt-in acknowledged. This is not a journal acceptance or public-posting receipt.
+- [ ] Final journal submission receipt archived and submission identifiers reconciled privately.
+- [ ] Public preprint posting and DOI verified, then linked from citation metadata if applicable.
+- [ ] Independently archived repository release DOI obtained if an archival deposit is made.
 
-arXiv posting is optional and is not a prerequisite to journal submission.
+Preprint posting is optional. In Review was selected; no arXiv posting is
+asserted. Confidential editorial files are not public supplementary material.

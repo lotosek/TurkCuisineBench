@@ -10,6 +10,10 @@ specifications, and food-related cultural heritage.
 
 ## Current status
 
+- The author submitted manuscript revision 1.4 to *Language Resources and
+  Evaluation* and opted into Research Square In Review on 17 September 2026.
+  The opt-in acknowledgement is not journal acceptance or confirmation that
+  the preprint is public. No public manuscript DOI has been verified here.
 - The 36-item development set is frozen as `TurkCuisineBench-Dev v0.2` with
   recorded SHA-256 checksums.
 - The two-model methods pilot is complete. Its purpose was pipeline and
@@ -33,6 +37,11 @@ specifications, and food-related cultural heritage.
   [interpretation amendment](docs/interpretation_amendment_2026-09-17.md).
 - Gates M0–M8 are complete. The current public-safe status is documented in
   [`docs/main_study_status.md`](docs/main_study_status.md).
+
+Use the [documentation index](docs/README.md) to distinguish current reporting
+from frozen plans and historical workflow files. The manuscript's research
+snapshot is `82719f07b11b3e962dad368778ac3a146443e9e7`; subsequent documentation
+updates do not silently replace it.
 
 No model generated or adjudicated semantic-correctness or error-taxonomy
 labels. The active Test questions, answer key, raw responses, row-level human
@@ -94,8 +103,10 @@ successor active Test is deployed.
 
 ## Citation and license
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff). No DOI or
-archival identifier has been assigned.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff).
+No independently archived repository DOI or public manuscript DOI has been
+verified for this record. `CITATION.cff.template` is an unused historical
+template, not citation metadata for the current repository.
 
 Author-created public code uses MIT; covered public Dev material, documentation
 and aggregate results use CC BY 4.0. Scope and exclusions are specified in
