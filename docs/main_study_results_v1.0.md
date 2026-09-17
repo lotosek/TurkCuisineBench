@@ -16,7 +16,7 @@ The registered H1–H3 family used Holm correction.
 |---|---|---|
 | H1: model-slot differences | χ²(7) = 177.181; raw p = 7.67 × 10⁻³⁵; Holm p = 2.30 × 10⁻³⁴ | Supported |
 | H2: lexical-cue contrast | adjusted L0−L1 difference = −0.061, 95% CI [−0.447, 0.326]; Holm p = .750 | Not supported |
-| H3: semantic recovery | 43 recovered responses; +7.49 points, 95% item-bootstrap CI [4.36, 11.19]; Holm p = 1.30 × 10⁻²⁷ | Supported |
+| H3: semantic recovery | 43 recovered responses; +7.49 points, 95% item-bootstrap CI [4.36, 11.19]; original Holm p = 1.30 × 10⁻²⁷ | Recovery quantified; unqualified confirmatory decision withheld because of extreme model scale |
 
 The significant H1 gate opened a separate 28-comparison Holm family. Nineteen
 paired McNemar contrasts remained significant. Observed rank order must not be
@@ -44,8 +44,10 @@ fitted because their frozen feasibility gates failed. Descriptive subgroup
 profiles were retained without post-output category collapse.
 
 The source-URL-clustered models and coverage audit were added post hoc during
-manuscript-level audit. They preserved the substantive H1, H2, and H3
-conclusions but remain outside both Holm families. The benchmark is not a
+manuscript-level audit. They support the global H1 finding, the unsupported H2
+contrast and positive recovery estimate, but do not validate the original H3
+GLMM or each pairwise contrast. They remain outside both Holm families. See the
+[dated interpretation amendment](interpretation_amendment_2026-09-17.md). The benchmark is not a
 province-, region-, community-, or source-family-representative sample.
 
 Machine-readable aggregate tables and the figure are in

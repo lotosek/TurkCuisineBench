@@ -1,27 +1,48 @@
-# Rights and reuse
+# Licenses and release boundaries
 
-Decision recorded: 17 September 2026.
+Effective 17 September 2026, submission revision 2. This explicit author-authorized
+decision supersedes the earlier no-public-license decision of the same date for
+the covered materials. Copyright remains with the respective holders.
 
-This repository is publicly viewable. No public reuse license is granted for
-author-created code, benchmark material, documentation, figures or results.
-Rights are reserved to their respective holders. Public visibility and citation
-metadata do not constitute an MIT, Creative Commons or other open-license grant.
-Any earlier statement of an intended MIT or CC BY 4.0 release is superseded by
-this decision; no such license had been granted.
+## Author-created software — MIT
 
-This notice does not limit uses permitted by applicable law or rights granted
-under the hosting platform's terms. Requests for additional reuse permission
-may be addressed to the corresponding author, Muhammed Buğra Yılmaz, at
-bugrayilmaz@klu.edu.tr.
+Author-created source code in `analysis/`, `evaluation/`, and executable
+configuration in `configs/` is licensed under the [MIT License](LICENSE-MIT.txt).
+Retain its copyright and license notice when redistributing covered software.
+Third-party dependencies retain their own licenses.
 
-Active Test-v1 questions, answer inventories, raw responses, reviewer records,
-and blinding material are not publicly released. A confidential editorial audit
-package may be supplied through controlled access; supplying it does not grant
-permission to redistribute its contents.
+## Public research material — CC BY 4.0
 
-Third-party institutional source documents retain their original rights.
-Source links identify evidence and grant no rights to redistribute those
-documents. Third-party software dependencies remain governed by their own
-licenses. No ownership is asserted over underlying facts or third-party works.
+To the extent the author holds copyright or database rights, original questions,
+annotations and compilation in `data/dev/`, original documentation in `docs/`,
+root README and citation metadata, and author-created aggregate tables and
+figures in `results/` are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+The public supplementary workbook `results/main_study/ESM_1.xlsx` is included to
+that same extent. Attribute Muhammed Buğra Yılmaz, TurkCuisineBench, the version
+used and repository URL; link the license and indicate changes.
 
-Any future license or Test release will require an explicit, versioned decision.
+CC BY 4.0 permits sharing and adaptation, including commercial reuse, subject to
+its terms. Compliant recipients' permissions cannot be revoked. No noncommercial,
+no-training or no-derivatives restriction is added. No ownership is asserted
+over facts, names or other public-domain elements.
+
+## Exclusions
+
+- Active Test questions, answer inventories, raw responses, reviewer workbooks,
+  identity/blinding mappings and private rationales are not publicly released
+  or licensed by this notice.
+- Manuscript drafts and submission correspondence, `paper/`, `workbooks/`, and
+  third-party attachments under `docs/attachments/` are excluded unless an
+  individual file expressly states otherwise.
+- Source documents, quotations, third-party figures and other third-party
+  material retain their original rights, including within covered files.
+  Source links confer no redistribution permission for those works.
+- Third-party software notices govern their respective components.
+
+The confidential editorial package is not a public supplement. Its private
+components require controlled access and may not be redistributed under this
+notice. Included public code retains MIT and public research material retains
+CC BY 4.0; confidentiality does not revoke those existing grants.
+
+See [controlled access](docs/controlled_access.md). A future public Test release
+needs its own explicit, versioned decision.

@@ -7,6 +7,12 @@ pairwise comparisons, subgroup summaries, error taxonomy, abstention/validity,
 and prespecified feasibility and sensitivity checks. The public `01` import
 wrapper replaces the confidential input checksum with environment variables.
 
+The scripts preserve the executed analysis, including original machine-generated
+H3 decision labels. For current manuscript interpretation, read the
+[17 September reporting amendment](../../docs/interpretation_amendment_2026-09-17.md)
+and `results/main_study/submission_interpretation_v1.1.csv`: the unqualified H3
+confirmatory decision is withheld because of the model-scale limitation.
+
 ## Confidential input boundary
 
 The active Test-v1 questions, accepted answers, raw responses, reviewer

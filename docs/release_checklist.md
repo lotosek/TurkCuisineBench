@@ -36,10 +36,12 @@
 - [x] Data statement, ethics statement, and limitations included.
 - [x] README and Dataset Card match the frozen Dev files.
 - [x] Locked analysis completed by one command; public-safe wrapper reverified against the authorized input.
-- [x] Rights decision recorded: no public reuse license; rights reserved (17 September 2026).
+- [x] Revised rights decision: MIT for public software; CC BY 4.0 for covered public research material; private Test and third-party exclusions retained.
 - [x] `CITATION.cff` finalized without an unassigned DOI.
 - [x] Public repository URL added to the manuscript.
 - [x] Exact submission commit identifier added to the revised manuscript (17 September 2026 copy).
-- [x] Online Resource 1 assembled and checked against the manuscript citations.
+- [x] Original Online Resource 1 assembled; revision adds correctly numbered Dev examples and model-level error profiles.
+- [x] Revised manuscript render inspected on every page; the amended paragraph also rechecked after the final wording correction.
+- [x] H3 interpretation amendment documented without altering frozen scores or original Holm families.
 - [x] Confidential editor/reviewer audit package assembled; file hashes and independent-rating agreement recomputed by an automated verification routine (not a new human review).
 - [ ] arXiv version linked to the dataset record after posting.

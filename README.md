@@ -26,9 +26,11 @@ specifications, and food-related cultural heritage.
 - Pre-adjudication agreement on the independently selected 82-response overlap
   was 80/82 (97.6%; Cohen's κ = .875). Three blinded discrepancies were
   adjudicated only after the independent ratings were locked.
-- H1 (model-slot differences) and H3 (semantic recovery over exact match) were
-  supported after Holm correction; H2 (the L0/L1 lexical-cue contrast) was not
-  supported.
+- H1 (model-slot differences) was supported after Holm correction; H2 was not.
+  H3 recovered 43 correct answers (+7.49 points), but its unqualified confirmatory
+  interpretation is withheld because of the extreme stacked-model scale. Original
+  test outputs and multiplicity families are preserved; see the dated
+  [interpretation amendment](docs/interpretation_amendment_2026-09-17.md).
 - Gates M0–M8 are complete. The current public-safe status is documented in
   [`docs/main_study_status.md`](docs/main_study_status.md).
 
@@ -95,5 +97,7 @@ successor active Test is deployed.
 Citation metadata is available in [`CITATION.cff`](CITATION.cff). No DOI or
 archival identifier has been assigned.
 
-No public reuse license is granted. Rights remain reserved as documented in
-[`LICENSES.md`](LICENSES.md), following the author's 17 September 2026 decision.
+Author-created public code uses MIT; covered public Dev material, documentation
+and aggregate results use CC BY 4.0. Scope and exclusions are specified in
+[`LICENSES.md`](LICENSES.md). Active Test and private reviewer records are excluded.
+See [controlled access](docs/controlled_access.md) for confidential audit requests.

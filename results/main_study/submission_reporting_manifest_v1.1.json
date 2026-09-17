@@ -1,0 +1,26 @@
+{
+  "reporting_version": "1.1",
+  "date": "2026-09-17",
+  "frozen_study_version": "1.0",
+  "type": "post_analysis_interpretation_amendment_not_new_registration",
+  "original_manifest": "public_analysis_manifest_v1.0.json",
+  "current_supplement": "ESM_1.xlsx",
+  "current_figure": "figure1_model_semantic_accuracy_v1.1.png",
+  "current_interpretation": "submission_interpretation_v1.1.csv",
+  "amendment": "../../docs/interpretation_amendment_2026-09-17.md",
+  "analytical_status": {
+    "H1": "SUPPORTED_AFTER_HOLM",
+    "H2": "NOT_SUPPORTED_AFTER_HOLM",
+    "H3": "RECOVERY_QUANTIFIED_UNQUALIFIED_CONFIRMATORY_DECISION_WITHHELD"
+  },
+  "frozen_labels_changed": false,
+  "original_numeric_exports_changed": false,
+  "original_holm_families_changed": false,
+  "new_confirmatory_tests": 0,
+  "public_dev_examples": 4,
+  "active_test_rows_released": 0,
+  "private_review_records_released": 0,
+  "software_license": "MIT",
+  "covered_public_material_license": "CC-BY-4.0",
+  "rights_scope": "../../LICENSES.md"
+}

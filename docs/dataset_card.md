@@ -63,4 +63,4 @@ The released benchmark is not intended to contain personal data. Reviewer names,
 
 ## Licensing
 
-No public reuse license is granted. Rights remain reserved under the decision recorded on 17 September 2026 in `LICENSES.md`.
+Author-created public software uses MIT. Covered public Dev material, original documentation and aggregate results use CC BY 4.0 under the revised 17 September 2026 decision in `LICENSES.md`. Active Test, private reviewer records, manuscripts and third-party works are excluded. See `controlled_access.md` for confidential audit requests.

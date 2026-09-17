@@ -1,0 +1,5 @@
+item_id,knowledge_domain,question_tr,gold_answer,accepted_answers,source_type,source_url
+D001,K3 — Preparation & Cooking Techniques,Adana Kebabı için et geleneksel olarak hangi araçla kıyılır?,Zırh,zırh,TÜRKPATENT tescil belgesi,https://ci.turkpatent.gov.tr/Files/GeographicalSigns/493a7cc8-b7da-4f95-bf8c-f82617bc990a.pdf
+D005,K2 — Ingredients & Composition,Antalya Piyazını diğer piyazlardan ayıran karakteristik sos nedir?,Tarator,tarator | tarator sosu,TÜRKPATENT tescil belgesi,https://ci.turkpatent.gov.tr/Files/GeographicalSigns/315.pdf
+D012,K5 — Culinary Terminology & Traditional Practices,Törensel Keşkek geleneğinde buğday taşınırken hangi iki çalgı çalınır?,Davul ve zurna,davul ve zurna | zurna ve davul,UNESCO ICH kaydı,https://ich.unesco.org/en/RL/ceremonial-keskek-tradition-00388
+D035,K4 — Geographical Indications & Product Specifications,Afyon Sucuğunda manda etinin asgari oranı yüzde kaçtır?,En az %15,15 | %15 | yüzde 15 | en az %15 | en az yüzde 15,TÜRKPATENT tescil belgesi,https://ci.turkpatent.gov.tr/Files/GeographicalSigns/8eb202f7-bf82-48cd-9f21-955bc921c665.pdf

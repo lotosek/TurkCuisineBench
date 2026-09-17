@@ -61,21 +61,24 @@ generative-AI judge.
   separate Holm correction.
 - H2 was not supported: the adjusted L0-minus-L1 probability difference was
   −0.061 (95% CI [−0.447, 0.326]), Holm-adjusted p = .750.
-- H3 was supported: semantic review recovered 43 correct non-exact responses,
+- H3 recovery was quantified: semantic review recovered 43 correct non-exact responses,
   an absolute gain of 7.49 percentage points (item-cluster bootstrap 95% CI
-  [4.36, 11.19]), Holm-adjusted p = 1.30 × 10⁻²⁷.
+  [4.36, 11.19]). The original Holm-adjusted p = 1.30 × 10⁻²⁷ is preserved, but
+  an unqualified confirmatory decision is withheld due to extreme model scale;
+  see `interpretation_amendment_2026-09-17.md`.
 - The prespecified expanded secondary model and model-by-domain interaction
   were not fitted because their frozen feasibility gates failed. No
   post-output category collapse was used.
 - Both prespecified H1 sensitivity analyses preserved the global conclusion.
 
-The post-hoc source-dependence audit also preserved the substantive
-conclusions: source-URL-clustered H1 Wald χ²(7) = 72.44 (p = 4.75 × 10⁻¹³), H2
+The post-hoc source-dependence audit supplied sensitivity evidence:
+source-URL-clustered H1 Wald χ²(7) = 72.44 (p = 4.75 × 10⁻¹³), H2
 L1-versus-L0 OR = 1.10 (95% CI [0.44, 2.74], p = .833), and H3
 semantic-versus-exact OR = 1.48 (95% CI [1.22, 1.79], p = 6.65 × 10⁻⁵). The
 source-cluster bootstrap interval for the 7.49-point semantic recovery was
 [3.92, 11.53]. These are post-hoc robustness diagnostics and are not members of
-either Holm family.
+either Holm family. They do not validate the original extreme-scale H3 GLMM or
+establish source-cluster robustness for each item-paired model contrast.
 
 Aggregate tables, the model-performance figure, and public-safe analysis code
 are available in [`results/main_study/`](../results/main_study/) and
@@ -95,7 +98,8 @@ The confidential editorial audit package has been assembled outside Git and
 verified by file hashes and recalculation of locked-rating agreement. Online
 Resource 1 is available in `results/main_study/`. All 38 source URLs were
 accessible on 17 September 2026. `CITATION.cff` is complete; no DOI has been
-assigned. The author elected to retain rights without a public reuse license.
+assigned. The revised rights decision grants MIT for public software and CC BY 4.0
+for covered public research material, with private and third-party exclusions.
 
 For submission, use the updated manuscript with its exact repository commit,
 upload Online Resource 1 as the public supplement, and supply the confidential
