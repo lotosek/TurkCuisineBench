@@ -6,7 +6,7 @@
 - [x] Reviewer decisions transcribed and integrity-checked against the source workbooks.
 - [x] All disagreements adjudicated against the official source.
 - [x] Reviewer identities removed from repository files.
-- [ ] All source URLs checked immediately before release.
+- [x] All 38 source URLs checked on 17 September 2026 (dated accessibility check).
 - [ ] Excluded candidates retained in a private development log.
 
 ## Data freeze
@@ -36,10 +36,10 @@
 - [x] Data statement, ethics statement, and limitations included.
 - [x] README and Dataset Card match the frozen Dev files.
 - [x] Locked analysis completed by one command; public-safe wrapper reverified against the authorized input.
-- [ ] Public license selected after rights review.
-- [ ] `CITATION.cff` finalized.
+- [x] Rights decision recorded: no public reuse license; rights reserved (17 September 2026).
+- [x] `CITATION.cff` finalized without an unassigned DOI.
 - [x] Public repository URL added to the manuscript.
-- [ ] Exact submission commit or release identifier added to the manuscript.
+- [x] Exact submission commit identifier added to the revised manuscript (17 September 2026 copy).
 - [x] Online Resource 1 assembled and checked against the manuscript citations.
-- [ ] Confidential editor/reviewer audit package assembled and independently checked.
+- [x] Confidential editor/reviewer audit package assembled; file hashes and independent-rating agreement recomputed by an automated verification routine (not a new human review).
 - [ ] arXiv version linked to the dataset record after posting.

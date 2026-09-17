@@ -1,14 +1,27 @@
-# Licensing status
+# Rights and reuse
 
-This is a private development repository. No license is granted for copying, redistribution, modification, model training, or public benchmark use at this stage.
+Decision recorded: 17 September 2026.
 
-Before public release, the project will separately determine:
+This repository is publicly viewable. No public reuse license is granted for
+author-created code, benchmark material, documentation, figures or results.
+Rights are reserved to their respective holders. Public visibility and citation
+metadata do not constitute an MIT, Creative Commons or other open-license grant.
+Any earlier statement of an intended MIT or CC BY 4.0 release is superseded by
+this decision; no such license had been granted.
 
-- a software license for evaluation code;
-- a data license for benchmark items and metadata;
-- the permitted treatment of source-derived factual statements and source links;
-- a license for documentation and the dataset card;
-- any restrictions required to protect a hidden or contamination-sensitive Test set.
+This notice does not limit uses permitted by applicable law or rights granted
+under the hosting platform's terms. Requests for additional reuse permission
+may be addressed to the corresponding author, Muhammed Buğra Yılmaz, at
+bugrayilmaz@klu.edu.tr.
 
-Source URLs identify supporting evidence. Inclusion of a URL does not imply redistribution rights for the source document itself.
+Active Test-v1 questions, answer inventories, raw responses, reviewer records,
+and blinding material are not publicly released. A confidential editorial audit
+package may be supplied through controlled access; supplying it does not grant
+permission to redistribute its contents.
 
+Third-party institutional source documents retain their original rights.
+Source links identify evidence and grant no rights to redistribute those
+documents. Third-party software dependencies remain governed by their own
+licenses. No ownership is asserted over underlying facts or third-party works.
+
+Any future license or Test release will require an explicit, versioned decision.

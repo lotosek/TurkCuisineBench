@@ -22,12 +22,15 @@ separately from the public-safe research repository.
 
 1. Upload the completed Online Resource 1 alongside the manuscript. The workbook
    is available in `results/main_study/` with article metadata and numbered tables.
-2. Assemble and QA the confidential editor/reviewer audit package referenced by
-   the data-availability statement.
-3. Recheck all official-source URLs immediately before submission.
-4. Replace the manuscript's repository-state reference with the exact commit or
-   archival tag used for submission.
-5. Finalize citation metadata and the release license after rights review.
+2. Supply the completed confidential editor/reviewer audit package only through
+   a journal channel that preserves confidentiality. Its integrity and locked
+   independent-rating agreement were checked automatically on 17 September 2026.
+3. Use the revised manuscript citing the exact submission repository commit.
+
+All 38 source URLs passed the 17 September accessibility check. Citation metadata
+is complete. The author elected to retain rights without a public reuse license;
+the earlier intended MIT/CC BY release statement is superseded. No DOI has been
+assigned and no journal submission has been made by this preparation workflow.
 
 ## Frozen reporting boundaries
 

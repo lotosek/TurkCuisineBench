@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this version of the TurkCuisineBench research repository. No public reuse license is granted; see LICENSES.md."
+title: "TurkCuisineBench: Turkish cuisine and culinary heritage benchmark"
+type: dataset
+authors:
+  - family-names: "Yılmaz"
+    given-names: "Muhammed Buğra"
+    orcid: "https://orcid.org/0000-0002-0009-054X"
+    affiliation: "Kırklareli University"
+version: "1.0-submission-2026-09-17"
+date-released: "2026-09-17"
+repository-code: "https://github.com/lotosek/TurkCuisineBench"
+url: "https://github.com/lotosek/TurkCuisineBench"
+abstract: "Official-source-grounded Turkish short-answer evaluation of cuisine and culinary heritage. The public repository contains development materials, evaluation code, documentation and aggregate main-study results. Active Test-v1 questions and row-level records are withheld."
+keywords:
+  - Turkish
+  - language-model evaluation
+  - culinary heritage
+  - short-answer benchmark

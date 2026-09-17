@@ -63,4 +63,4 @@ The released benchmark is not intended to contain personal data. Reviewer names,
 
 ## Licensing
 
-Licensing remains under review. No public reuse license is granted by this development draft.
+No public reuse license is granted. Rights remain reserved under the decision recorded on 17 September 2026 in `LICENSES.md`.

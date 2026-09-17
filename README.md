@@ -92,9 +92,8 @@ successor active Test is deployed.
 
 ## Citation and license
 
-Citation metadata and the archival identifier will be finalized for the
-submission release. See `CITATION.cff.template`.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff). No DOI or
+archival identifier has been assigned.
 
-No public reuse license has yet been granted. The intended release model is MIT
-for author-created software and CC BY 4.0 for author-created public benchmark
-data/documentation, subject to final rights review. See `LICENSES.md`.
+No public reuse license is granted. Rights remain reserved as documented in
+[`LICENSES.md`](LICENSES.md), following the author's 17 September 2026 decision.

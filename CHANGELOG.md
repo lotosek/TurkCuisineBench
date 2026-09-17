@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-17 — Submission materials and rights decision
+
+- Completed citation metadata without inventing a DOI or publication record.
+- Recorded the author's decision to retain rights without a public reuse license; superseded the earlier intended MIT/CC BY release statement.
+- Rechecked all 38 frozen source URLs successfully and published only the aggregate access-check result.
+- Assembled the confidential editorial audit package outside Git and checked file integrity, 82 independent overlap ratings, 80 decision agreements, and three adjudication triggers against the saved snapshot.
+- Preserved the documented pre-adjudication filename deviation and distinguished automated verification from independent human review.
+
 ## 2026-09-10 — Supplementary workbook completed
 
 - Added Online Resource 1 with article metadata and six aggregate result sheets covering pairwise contrasts, subgroups, coverage, source-cluster robustness, and pre-adjudication reliability.

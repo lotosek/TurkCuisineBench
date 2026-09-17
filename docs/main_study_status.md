@@ -1,6 +1,6 @@
 # Main-study status
 
-Last updated: 2026-09-10
+Last updated: 2026-09-17
 
 ## Current state
 
@@ -91,13 +91,13 @@ changing the public-release boundary.
 
 ## Remaining submission and release work
 
-1. Assemble and independently verify the editor-facing confidential audit
-   package. The manuscript's cited Online Resource 1 is now available in
-   `results/main_study/` and has been checked against the aggregate CSV tables.
-2. Recheck all 38 source URLs immediately before submission or archival
-   release.
-3. Finalize `CITATION.cff`, software/data licenses, and the archival identifier.
-4. Update the manuscript's repository-state reference to the exact submission
-   commit or release tag.
-5. Keep Test-v1 private until a successor active Test version is deployed or a
-   separately documented release decision is made.
+The confidential editorial audit package has been assembled outside Git and
+verified by file hashes and recalculation of locked-rating agreement. Online
+Resource 1 is available in `results/main_study/`. All 38 source URLs were
+accessible on 17 September 2026. `CITATION.cff` is complete; no DOI has been
+assigned. The author elected to retain rights without a public reuse license.
+
+For submission, use the updated manuscript with its exact repository commit,
+upload Online Resource 1 as the public supplement, and supply the confidential
+audit package only through a channel that preserves editorial confidentiality.
+Test-v1 remains private until a separately documented release decision.
