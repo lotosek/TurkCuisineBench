@@ -37,5 +37,7 @@ they must not be promoted to confirmatory findings.
 See the [dated reporting amendment](../../docs/interpretation_amendment_2026-09-17.md)
 for the H3 model-scale reservation and precise H2 estimand. Frozen output files
 remain reproducible; current interpretation must not be inferred from the old
-machine-generated `hypothesis_supported` field alone. The only item-level content
+machine-generated `hypothesis_supported` field alone. In the reporting CSV,
+decision columns prefixed `original_` preserve historical interpretation;
+`reporting_status` is authoritative. The only item-level content
 in the revised public supplement is four already-public Dev examples, never Test.
