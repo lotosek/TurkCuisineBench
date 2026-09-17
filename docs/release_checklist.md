@@ -7,7 +7,8 @@
 - [x] All disagreements adjudicated against the official source.
 - [x] Reviewer identities removed from repository files.
 - [x] All 38 source URLs checked on 17 September 2026 (dated accessibility check).
-- [ ] Excluded candidates retained in a private development log.
+- [x] The 36 Dev items excluded from Test are retained with reasons in the private `DEV_EXCLUSIONS` sheet; the private nine-entry decision log was also verified.
+- [ ] A comprehensive attrition log for the earlier source-fact candidate pool has not been verified; the preceding check must not be interpreted as covering that broader pool.
 
 ## Data freeze
 
@@ -39,9 +40,16 @@
 - [x] Revised rights decision: MIT for public software; CC BY 4.0 for covered public research material; private Test and third-party exclusions retained.
 - [x] `CITATION.cff` finalized without an unassigned DOI.
 - [x] Public repository URL added to the manuscript.
-- [x] Exact submission commit identifier added to the revised manuscript (17 September 2026 copy).
+- [x] Exact research-materials snapshot commit identified in the revised manuscript; subsequent submission-documentation edits are distinguished from that release.
 - [x] Original Online Resource 1 assembled; revision adds correctly numbered Dev examples and model-level error profiles.
 - [x] Revised manuscript render inspected on every page; the amended paragraph also rechecked after the final wording correction.
 - [x] H3 interpretation amendment documented without altering frozen scores or original Holm families.
 - [x] Confidential editor/reviewer audit package assembled; file hashes and independent-rating agreement recomputed by an automated verification routine (not a new human review).
+- [x] Manuscript revision 1.3 retains single-author wording and six keywords, including Turkish cuisine and culinary heritage.
+- [x] Concise AI-assistance disclosure retained in Methods, identifying assistance with literature, code/data processing, and drafting/editing while distinguishing final human review decisions.
+- [x] Cover letter and manuscript-aligned submission-field text prepared privately; author-experience paragraph used without asserting verification of the live ORCID profile.
+- [ ] Author confirms publication/submission history and approves submission-system declarations.
+- [ ] Journal submission completed and receipt archived. Preparation alone does not satisfy this item.
 - [ ] arXiv version linked to the dataset record after posting.
+
+arXiv posting is optional and is not a prerequisite to journal submission.

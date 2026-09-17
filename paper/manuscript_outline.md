@@ -7,12 +7,13 @@ large language models' factual knowledge of Turkish cuisine and culinary heritag
 
 **Target journal:** *Language Resources and Evaluation*, full-length paper.
 
-The English manuscript revision 1.1 has a 20-page checked Word-to-PDF render,
-a 204-word abstract, six keywords, decimal headings using no more than three levels,
+The English manuscript revision 1.3 has a 20-page checked Word-to-PDF render,
+a 206-word abstract, six keywords, decimal headings using no more than three levels,
 seven tables, one 1200-dpi figure,
 Statements and Declarations, data/code availability statements, and 33 cited
 reference entries. These counts refer to the revised submission copy, not the
-earlier manuscript.
+earlier manuscript. The culinary keywords are **Turkish cuisine** and
+**culinary heritage**. Single-author wording has been retained consistently.
 
 The manuscript reports the locked M8 results and the later, explicitly
 post-hoc source-dependence and coverage audit. The full DOCX is deliberately not
@@ -26,9 +27,14 @@ separately from the public-safe research repository.
 2. Supply the completed confidential editor/reviewer audit package only through
    a journal channel that preserves confidentiality. Its integrity and locked
    independent-rating agreement were checked automatically on 17 September 2026.
-3. Use the revised manuscript citing the exact submission repository commit.
-4. Finalize the cover letter and current author-profile evidence, and review
-   declarations in the submission interface. No interface submission is implied.
+3. Use manuscript revision 1.3. Its exact research-materials snapshot is commit
+   `82719f07b11b3e962dad368778ac3a146443e9e7`; later submission-documentation
+   updates do not alter that archived research release.
+4. The cover letter is prepared, including the relevant-author-experience
+   paragraph permitted by the journal. Submission-field text is prepared from
+   the manuscript. The author must confirm publication/submission history and
+   approve declarations in the submission interface. No interface submission
+   is implied, and an updated public ORCID profile is not asserted as verified.
 
 All 38 source URLs passed the 17 September accessibility check. Citation metadata
 is complete. The author authorized MIT for public software and CC BY 4.0 for

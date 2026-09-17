@@ -101,7 +101,18 @@ accessible on 17 September 2026. `CITATION.cff` is complete; no DOI has been
 assigned. The revised rights decision grants MIT for public software and CC BY 4.0
 for covered public research material, with private and third-party exclusions.
 
-For submission, use the updated manuscript with its exact repository commit,
+Manuscript revision 1.3 and its cover letter are prepared outside Git, together
+with manuscript-aligned submission-field text. The cover letter uses a relevant
+author-experience paragraph; completeness of the public ORCID profile is not
+asserted as verified. The concise Methods disclosure identifies AI-assisted
+research and writing support while retaining responsibility for final human
+review decisions. Frozen data and statistical results are unchanged.
+
+For submission, use the updated manuscript citing research-materials snapshot
+`82719f07b11b3e962dad368778ac3a146443e9e7`,
 upload Online Resource 1 as the public supplement, and supply the confidential
 audit package only through a channel that preserves editorial confidentiality.
-Test-v1 remains private until a separately documented release decision.
+Author confirmation of publication/submission history and approval of the
+submission-system declarations remain necessary. No journal submission has
+been made by this preparation workflow. Test-v1 remains private until a
+separately documented release decision.
